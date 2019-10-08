@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public int ammo = 20;
     public int lives = 3;
     //yabba dabba doo
+    //it doo
 
 
     // Start is called before the first frame update
