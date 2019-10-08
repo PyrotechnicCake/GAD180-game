@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public int stam = 100;
     public int ammo = 20;
     public int lives = 3;
+    //yabba dabba doo
 
 
     // Start is called before the first frame update
