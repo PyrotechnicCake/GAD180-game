@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 49591752}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,9 +143,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 5
   atk: 1
+  atkspd: 1
   stam: 100
   ammo: 20
   lives: 3
+  movespeed: 5
+  dir: 0
 --- !u!4 &49591753
 Transform:
   m_ObjectHideFlags: 0
@@ -414,8 +417,9 @@ GameObject:
   - component: {fileID: 2064586501}
   - component: {fileID: 2064586500}
   - component: {fileID: 2064586499}
+  - component: {fileID: 2064586503}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -494,3 +498,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &2064586503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064586498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f777448a9617deb439414447ef5b8276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  atk: 0
+  atkspd: 0
+  stam: 0
+  ammo: 0
+  lives: 0
+  movespeed: 0
+  dir: 0
