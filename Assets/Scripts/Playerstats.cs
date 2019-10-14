@@ -7,6 +7,7 @@ public class Playerstats : MonoBehaviour
     //default stats
     public int hp;
     public int atk;
+    public int rngAtk;
     public int atkspd;
     public int stam;
     public int ammo;
@@ -30,10 +31,16 @@ public class Playerstats : MonoBehaviour
     {
         hp = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().hp;
         atk = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().atk;
+        rngAtk = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().rngAtk;
         stam = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().stam;
         ammo = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().ammo;
         lives = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().lives;
         movespeed = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().movespeed;
         dir = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().dir;
+    }
+
+    void MeleeAttack()
+    {
+        
     }
 }
