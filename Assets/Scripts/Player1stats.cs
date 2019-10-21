@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player1stats : MonoBehaviour
+public class Player1Stats : MonoBehaviour
 {
     //default stats
     public int hp;
@@ -42,5 +42,8 @@ public class Player1stats : MonoBehaviour
     void MeleeAttack()
     {
         //for ();
+        //check if other player is in range
+        //if yes
+        //GameObject.FindGameObjectWithTag("player1").GetComponent<GameManager>().Attack(GameObject.FindGameObjectWithTag("player1"), GameObject.FindGameObjectWithTag("player2"));
     }
 }
