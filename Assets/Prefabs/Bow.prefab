@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4985187389428084678
+--- !u!1 &1477949401152246109
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 775920224987824704}
-  - component: {fileID: 6512411888396818574}
-  - component: {fileID: 6183289166014322261}
-  - component: {fileID: 4484943376258077360}
-  - component: {fileID: 5219867148150912572}
+  - component: {fileID: 1477949401152246107}
+  - component: {fileID: 1477949401152246106}
+  - component: {fileID: 1477949401152246105}
+  - component: {fileID: 1477949401152246104}
   m_Layer: 0
-  m_Name: Arrow
+  m_Name: Bow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &775920224987824704
+--- !u!4 &1477949401152246107
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4985187389428084678}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -7.54, y: 3.22, z: -1.64}
-  m_LocalScale: {x: 6.6825542, y: 4.5835238, z: 1}
+  m_GameObject: {fileID: 1477949401152246109}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.13, y: 4.6, z: -4.16}
+  m_LocalScale: {x: 6, y: 6, z: 6}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!212 &6512411888396818574
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1477949401152246106
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4985187389428084678}
+  m_GameObject: {fileID: 1477949401152246109}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -71,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: cb01e6d46faef1f40a931d925dedfb2f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d76102e5336cfba4ab94a12a0c3047fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -82,55 +81,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &6183289166014322261
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!95 &1477949401152246105
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4985187389428084678}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 4
---- !u!58 &4484943376258077360
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4985187389428084678}
+  m_GameObject: {fileID: 1477949401152246109}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.16000001
---- !u!114 &5219867148150912572
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ba3c73263ad528342b94ed7cf2bb37f0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1477949401152246104
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4985187389428084678}
+  m_GameObject: {fileID: 1477949401152246109}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 509175328dac1224b93e9d9a6d4ac8ea, type: 3}
+  m_Script: {fileID: 11500000, guid: d40c467887b912f498ff3c3188ba9277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSpeed: 10
-  rb: {fileID: 6183289166014322261}
-  maxProjectileDist: 50
+  firePoint: {fileID: 0}
+  arrowPrefab: {fileID: 4985187389428084678, guid: 07f9376c5759b4a4a819c043a2ed965d,
+    type: 3}
+  bowPrefab: {fileID: 1477949401152246109}
+  totalCharge: 0
+  isCharging: 0

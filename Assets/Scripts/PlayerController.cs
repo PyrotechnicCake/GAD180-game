@@ -19,20 +19,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
-    }
 
-    void Update()
-    {
-        if (controller.isGrounded)
-        {
-            moveDirection = new Vector3(Input.GetAxis(horz), 0, Input.GetAxis(vert));
-           // moveDirection = transform.TransformDirection(moveDirection);
-            moveDirection *= speed;
-
-            
-        }
-
-        if(playerID==0)
+        if (playerID == 0)
         {
             horz = "HorizontalP1";
             vert = "VerticalP1";
@@ -43,9 +31,18 @@ public class PlayerController : MonoBehaviour
             horz = "HorizontalP2";
             vert = "VerticalP2";
         }
-        
-            
+    }
 
+    void Update()
+    {
+        if (controller.isGrounded)
+        {
+            moveDirection = new Vector3(Input.GetAxis(horz), 0, Input.GetAxis(vert));
+           // moveDirection = transform.TransformDirection(moveDirection);
+            moveDirection *= speed;
+        }
+
+        
 
         RaycastHit Hit;
 
@@ -54,8 +51,9 @@ public class PlayerController : MonoBehaviour
             Vector3 lookPosition = Hit.point;
             transform.LookAt(new Vector3(lookPosition.x, transform.position.y, lookPosition.z));
         }
-      //  transform.Rotate(0, Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime, 0);
+        //  transform.Rotate(0, Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime, 0);
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
     }
+
 }
