@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 5424316783016220801}
   - component: {fileID: 5424316783016220800}
   - component: {fileID: 2133790471}
-  - component: {fileID: 6911960133897317636}
+  - component: {fileID: 7315899225095823862}
   m_Layer: 0
   m_Name: Placeholder Player
   m_TagString: Untagged
@@ -316,7 +316,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6911960133897317636
+--- !u!114 &7315899225095823862
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -331,6 +331,10 @@ MonoBehaviour:
   firePoint: {fileID: 7621218750981338024}
   arrowPrefab: {fileID: 4985187389428084678, guid: 07f9376c5759b4a4a819c043a2ed965d,
     type: 3}
+  bowPrefab: {fileID: 1477949401152246109, guid: ce809648ac40508459ae820a4d6900d8,
+    type: 3}
+  totalCharge: 0
+  isCharging: 0
 --- !u!1 &7127219530257039504
 GameObject:
   m_ObjectHideFlags: 0

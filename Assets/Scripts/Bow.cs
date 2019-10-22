@@ -11,16 +11,12 @@ public class Bow : MonoBehaviour
     private float totalChargeNeeded = 1f;
     public bool isCharging = false;
 
-    void Start()
-    {
-        
-    }
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
         {
             //instantiate bow
-            //Instantiate(bowPrefab,)
+            Instantiate(bowPrefab, firePoint.position, firePoint.rotation, firePoint.transform);
 
             //start charging
             isCharging = true;
@@ -46,19 +42,21 @@ public class Bow : MonoBehaviour
     void AttemptShoot()
     {
         //see if charged long enough
-        //if yes fire and reset to 0
+        //if yes fire and reset to 0 and put bow away
         if (totalCharge >= totalChargeNeeded)
         {
             Shoot();
             Debug.Log("Shot!");
             totalCharge = 0f;
+            Destroy(bowPrefab);
 
         }
-        //if no dont and reset to 0
+        //if no dont and reset to 0 and put bow away
         else
         {
             totalCharge = 0f;
             Debug.Log("failed");
+            Destroy(bowPrefab);
         }
     }
     void Shoot()
