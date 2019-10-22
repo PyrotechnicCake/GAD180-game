@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player2Stats : MonoBehaviour
+public class Player2stats : MonoBehaviour
 {
     //default stats
     private bool invincible;
