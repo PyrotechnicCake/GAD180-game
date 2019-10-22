@@ -20,13 +20,20 @@ public class PlayerController : MonoBehaviour
     {
         if (controller.isGrounded)
         {
-            moveDirection = new Vector3(0, 0, Input.GetAxis("Vertical"));
-            moveDirection = transform.TransformDirection(moveDirection);
+            moveDirection = new Vector3(Input.GetAxis("HorizontalP1"), 0, Input.GetAxis("VerticalP1"));
+           // moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
 
         }
 
-        transform.Rotate(0, Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime, 0);
+        RaycastHit Hit;
+
+        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out Hit, 100f))
+        {
+            Vector3 lookPosition = Hit.point;
+            transform.LookAt(new Vector3(lookPosition.x, transform.position.y, lookPosition.z));
+        }
+      //  transform.Rotate(0, Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime, 0);
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
     }
