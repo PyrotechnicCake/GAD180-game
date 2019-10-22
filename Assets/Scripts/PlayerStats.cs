@@ -39,6 +39,17 @@ public class PlayerStats : MonoBehaviour
         dir = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().dir;
     }
 
+    public void CheckIfDead()
+    {
+        if (hp <= 0)
+        {
+            //respawn
+            //Vector3
+            //refill hp
+            //give temporary invincibility
+        }
+    }
+
     void MeleeAttack()
     {
         //for ();
