@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player1Stats : MonoBehaviour
+public class Player1stats : MonoBehaviour
 {
     //default stats
     public int hp;
