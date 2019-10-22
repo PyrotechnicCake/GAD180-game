@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 6.0f;
+    public float speed = 10.0f;
     public float jumpForce = 8.0f;
     public float gravity = 20.0f;
     public float rotSpeed = 90f;
@@ -19,8 +19,20 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
-    }
 
+        if (playerID == 0)
+        {
+            horz = "HorizontalP1";
+            vert = "VerticalP1";
+        }
+
+        else
+
+        {
+            horz = "HorizontalP2";
+            vert = "VerticalP2";
+        }
+    }
     void Update()
     {
         if (controller.isGrounded)
@@ -28,22 +40,8 @@ public class PlayerController : MonoBehaviour
             moveDirection = new Vector3(Input.GetAxis(horz), 0, Input.GetAxis(vert));
            // moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
-
-            
+   
         }
-
-        if(playerID==0)
-        {
-            horz = "HorizontalP1";
-            vert = "VerticalP1";
-        }
-
-        else
-        {
-            horz = "HorizontalP2";
-            vert = "VerticalP2";
-        }
-        
             
 
 
