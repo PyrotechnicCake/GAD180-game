@@ -22,7 +22,8 @@ public class AttackScript : MonoBehaviour
                 foreach (Collider2D collider in meleeHitBox)
                 {
                     Debug.Log(collider.name);
-                    collider.gameObject.GetComponent<Player2stats>().hp -= GetComponent<Player1stats>().atk;
+                    collider.gameObject.GetComponent<PlayerStats>().hp -= GetComponent<PlayerStats>().atk;
+                    collider.gameObject.GetComponent<PlayerStats>().CheckIfDead();
                     //collider.gameObject.GetComponent<Player2stats>().TakeDamage();
                 }
                 RemainingAttackLag = attackLag;

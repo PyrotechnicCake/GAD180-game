@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 6.0f;
+    public float speed = 10.0f;
     public float jumpForce = 8.0f;
     public float gravity = 20.0f;
     public float rotSpeed = 90f;
@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
         }
 
         else
+
         {
             horz = "HorizontalP2";
             vert = "VerticalP2";

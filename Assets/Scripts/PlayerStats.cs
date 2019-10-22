@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player2stats : MonoBehaviour
+public class PlayerStats : MonoBehaviour
 {
     //default stats
-    private bool invincible;
-    private float invinciblityTime;
     public int hp;
     public int atk;
     public int rngAtk;
@@ -26,14 +24,7 @@ public class Player2stats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       /* if (invincible == true)
-        {
-            invinciblityTime -= Time.deltaTime;
-            if (invinciblityTime == 0)
-            {
-                invincible = false;
-            }
-        }*/
+        
     }
 
     void LoadStats()
@@ -48,12 +39,22 @@ public class Player2stats : MonoBehaviour
         dir = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().dir;
     }
 
-    /*public void TakeDamage()
+    public void CheckIfDead()
     {
-        if (invincible == false)
+        if (hp <= 0)
         {
-            hp -= GameObject.FindGameObjectWithTag("Player1").GetComponent<Player1stats>().atk;
-            invincible = true;
+            //respawn
+            //Vector3
+            //refill hp
+            //give temporary invincibility
         }
-    }*/
+    }
+
+    void MeleeAttack()
+    {
+        //for ();
+        //check if other player is in range
+        //if yes
+        //GameObject.FindGameObjectWithTag("player1").GetComponent<GameManager>().Attack(GameObject.FindGameObjectWithTag("player1"), GameObject.FindGameObjectWithTag("player2"));
+    }
 }

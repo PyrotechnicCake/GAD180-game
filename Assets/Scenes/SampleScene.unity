@@ -510,7 +510,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 704408920}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d30e7cc8680bb446abf87d642ef2df5, type: 3}
+  m_Script: {fileID: 11500000, guid: f777448a9617deb439414447ef5b8276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 0
@@ -627,7 +627,7 @@ GameObject:
   - component: {fileID: 2064586503}
   - component: {fileID: 2064586504}
   - component: {fileID: 2064586499}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
