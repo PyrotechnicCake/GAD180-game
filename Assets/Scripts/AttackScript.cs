@@ -18,6 +18,7 @@ public class AttackScript : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.Space))
             {
+                //swordAnim.SetTrigger("Sword1");
                 Collider2D[] meleeHitBox = Physics2D.OverlapCircleAll(meleeAttackPos.position, meleeAttackRange, enemyInRangePlayer);
                 foreach (Collider2D collider in meleeHitBox)
                 {

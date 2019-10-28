@@ -27,7 +27,7 @@ public class Arrow : MonoBehaviour
         }
         else
         {
-            transform.Translate(Vector3.forward * projectileSpeed * Time.deltaTime);
+            transform.Translate(Vector3.up * projectileSpeed * Time.deltaTime);
         }
     }
 
