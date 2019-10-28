@@ -34,13 +34,13 @@ public class GameManager : MonoBehaviour
     {
         //check if shield is between players
         //if not
-        defender.GetComponent<Player1stats>().hp -= 1;
+        defender.GetComponent<PlayerStats>().hp -= 1;
         Debug.Log(defender + " was hit! ");
         //check if defender is out of hp
-        if (defender.GetComponent<Player1stats>().hp <= 0)
+        if (defender.GetComponent<PlayerStats>().hp <= 0)
         {
             //if yes destroy and respawn
-            defender.GetComponent<Player1stats>().lives -= 1;
+            defender.GetComponent<PlayerStats>().lives -= 1;
             Debug.Log(defender + "was defeated!");
             Destroy(defender);
             //then respawn

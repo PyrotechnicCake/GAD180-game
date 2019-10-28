@@ -18,11 +18,13 @@ public class AttackScript : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.Space))
             {
+                //swordAnim.SetTrigger("Sword1");
                 Collider2D[] meleeHitBox = Physics2D.OverlapCircleAll(meleeAttackPos.position, meleeAttackRange, enemyInRangePlayer);
                 foreach (Collider2D collider in meleeHitBox)
                 {
                     Debug.Log(collider.name);
-                    collider.gameObject.GetComponent<Player2stats>().hp -= GetComponent<Player1stats>().atk;
+                    collider.gameObject.GetComponent<PlayerStats>().hp -= GetComponent<PlayerStats>().atk;
+                    collider.gameObject.GetComponent<PlayerStats>().CheckIfDead();
                     //collider.gameObject.GetComponent<Player2stats>().TakeDamage();
                 }
                 RemainingAttackLag = attackLag;
