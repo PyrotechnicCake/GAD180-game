@@ -17,7 +17,9 @@ public class AttackDamage : MonoBehaviour
         {
             Debug.Log("hit enemy");
             hits[0].GetComponent<PlayerStats>().hp -= damage;
+            hits[0].GetComponent<PlayerStats>().CheckIfDead();
             gameObject.SetActive(false);
+
         }
     }
 }

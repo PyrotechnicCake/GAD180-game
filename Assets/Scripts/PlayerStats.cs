@@ -14,10 +14,14 @@ public class PlayerStats : MonoBehaviour
     public int lives;
     public float movespeed;
     public int dir;
+    public GameObject player;
+    public GameObject playerPrefab;
+    public Transform respawnPoint;
 
     // Start is called before the first frame update
     void Start()
     {
+        player = this.gameObject;
         LoadStats();
     }
 
@@ -43,7 +47,12 @@ public class PlayerStats : MonoBehaviour
     {
         if (hp <= 0)
         {
+            //destroy player
+            Destroy(player);
             //respawn
+            Instantiate(playerPrefab, respawnPoint.position, respawnPoint.rotation);
+            //attatched scripts auot turned off, need to reset stats and turn scripts on
+
             //Vector3
             //refill hp
             //give temporary invincibility
