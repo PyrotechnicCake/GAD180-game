@@ -10,17 +10,22 @@ public class AttackScript : MonoBehaviour
     public Transform meleeAttackPos;
     public float meleeAttackRange;
     public LayerMask enemyInRangePlayer;
+    public Animator swordAnim;
 
+    void Start()
+    {
+        swordAnim = gameObject.GetComponent<Animator>();
+    }
     private void Update()
     {
         if(RemainingAttackLag <= 0)
             // allow attack
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                //swordAnim.SetTrigger("Sword1");
-                Collider2D[] meleeHitBox = Physics2D.OverlapCircleAll(meleeAttackPos.position, meleeAttackRange, enemyInRangePlayer);
-                foreach (Collider2D collider in meleeHitBox)
+                swordAnim.SetTrigger("Swing");
+                Collider[] meleeHitBox = Physics.OverlapCapsule(meleeAttackPos.position, meleeAttackPos.position * 10f, meleeAttackRange, enemyInRangePlayer);
+                foreach (Collider collider in meleeHitBox)
                 {
                     Debug.Log(collider.name);
                     collider.gameObject.GetComponent<PlayerStats>().hp -= GetComponent<PlayerStats>().atk;
