@@ -14,6 +14,9 @@ public class PlayerStats : MonoBehaviour
     public int lives;
     public float movespeed;
     public int dir;
+    //Assigned gameobjects
+    public GameObject spawnPoint;
+    public GameObject bloodParticles;
 
     // Start is called before the first frame update
     void Start()
@@ -41,11 +44,15 @@ public class PlayerStats : MonoBehaviour
 
     public void CheckIfDead()
     {
+        //Emmit particles
+            Instantiate(bloodParticles, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
         if (hp <= 0)
         {
+            
             //respawn
-            //Vector3
+            transform.position = spawnPoint.transform.position;
             //refill hp
+            hp = 5;
             //give temporary invincibility
         }
     }

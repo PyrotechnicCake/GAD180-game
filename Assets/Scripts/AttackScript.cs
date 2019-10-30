@@ -25,7 +25,7 @@ public class AttackScript : MonoBehaviour
                     Debug.Log(collider.name);
                     collider.gameObject.GetComponent<PlayerStats>().hp -= GetComponent<PlayerStats>().atk;
                     collider.gameObject.GetComponent<PlayerStats>().CheckIfDead();
-                    //collider.gameObject.GetComponent<Player2stats>().TakeDamage();
+                    //collider.gameObject.GetComponent<Playerstats>().TakeDamage();
                 }
                 RemainingAttackLag = attackLag;
             }
