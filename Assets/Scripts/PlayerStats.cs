@@ -15,7 +15,6 @@ public class PlayerStats : MonoBehaviour
     public float movespeed;
     public int dir;
     //Assigned gameobjects
-    public GameObject spawnPoint;
     public GameObject bloodParticles;
     public GameObject player;
     public GameObject playerPrefab;
@@ -53,7 +52,11 @@ public class PlayerStats : MonoBehaviour
         if (hp <= 0)
         {
             //respawn
-            //Vector3
+            player.transform.position = respawnPoint.transform.position;
+            //Check remaining lives
+
+            //subtract 1 life
+            lives -= 1;
             //refill hp
             hp = 5;
             //give temporary invincibility
