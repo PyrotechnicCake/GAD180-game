@@ -17,10 +17,14 @@ public class PlayerStats : MonoBehaviour
     //Assigned gameobjects
     public GameObject spawnPoint;
     public GameObject bloodParticles;
+    public GameObject player;
+    public GameObject playerPrefab;
+    public Transform respawnPoint;
 
     // Start is called before the first frame update
     void Start()
     {
+        player = this.gameObject;
         LoadStats();
     }
 
@@ -48,9 +52,8 @@ public class PlayerStats : MonoBehaviour
             Instantiate(bloodParticles, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
         if (hp <= 0)
         {
-            
             //respawn
-            transform.position = spawnPoint.transform.position;
+            //Vector3
             //refill hp
             hp = 5;
             //give temporary invincibility

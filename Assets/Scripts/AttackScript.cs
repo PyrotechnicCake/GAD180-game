@@ -10,24 +10,31 @@ public class AttackScript : MonoBehaviour
     public Transform meleeAttackPos;
     public float meleeAttackRange;
     public LayerMask enemyInRangePlayer;
+    public Animator swordAnim;
+    public GameObject attackPoint;
 
+    void Start()
+    {
+        swordAnim = gameObject.GetComponent<Animator>();
+    }
     private void Update()
     {
         if(RemainingAttackLag <= 0)
             // allow attack
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                //swordAnim.SetTrigger("Sword1");
-                Collider2D[] meleeHitBox = Physics2D.OverlapCircleAll(meleeAttackPos.position, meleeAttackRange, enemyInRangePlayer);
-                foreach (Collider2D collider in meleeHitBox)
+                swordAnim.SetTrigger("Swing");
+                /*Collider[] meleeHitBox = Physics.OverlapCapsule(meleeAttackPos.position, meleeAttackPos.position * 10f, meleeAttackRange, enemyInRangePlayer);
+                foreach (Collider collider in meleeHitBox)
                 {
                     Debug.Log(collider.name);
-                    collider.gameObject.GetComponent<PlayerStats>().hp -= GetComponent<PlayerStats>().atk;
+                    collider.gameObject.GetComponent<PlayerStats>().hp -= 1;
+                    Debug.Log(collider.name + " took 1 damage");
                     collider.gameObject.GetComponent<PlayerStats>().CheckIfDead();
                     //collider.gameObject.GetComponent<Playerstats>().TakeDamage();
                 }
-                RemainingAttackLag = attackLag;
+                RemainingAttackLag = attackLag;*/
             }
         }
         else
@@ -35,9 +42,21 @@ public class AttackScript : MonoBehaviour
             RemainingAttackLag -= Time.deltaTime;
         }
     }
-    void OnDrawGizmosSelected()
+    /*void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(meleeAttackPos.position, meleeAttackRange);
+    }*/
+    void ActivateAttackPoint()
+    {
+        attackPoint.SetActive(true);
     }
+    void DeactivateAttackPoint()
+    {
+        if (attackPoint.activeInHierarchy)
+        {
+            attackPoint.SetActive(false);
+        }
+    }
+    
 }

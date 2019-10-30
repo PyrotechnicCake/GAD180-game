@@ -15,6 +15,7 @@ public class Bow : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
+            //destroy sword and shield
             //instantiate bow
             Instantiate(bowPrefab, firePoint.position, firePoint.rotation, firePoint.transform);
 
@@ -34,8 +35,7 @@ public class Bow : MonoBehaviour
             Debug.Log("release");
             isCharging = false;
             //destroy bow
-
-
+            //instantiate sword and shield
         }
     }
 
