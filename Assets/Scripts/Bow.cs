@@ -10,10 +10,12 @@ public class Bow : MonoBehaviour
     public float totalCharge = 0f;
     private float totalChargeNeeded = 1f;
     public bool isCharging = false;
+    public int totalArrows = 10;
+
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && GetComponentInParent<PlayerStats>().stam > 0 && totalArrows > 0)
         {
             //destroy sword and shield
             //instantiate bow
@@ -22,6 +24,10 @@ public class Bow : MonoBehaviour
             //start charging
             isCharging = true;
             Debug.Log("charging");
+        }
+        else
+        {
+            Debug.Log("Out of Stamina!");
         }
         if(isCharging == true)
         {
@@ -45,6 +51,8 @@ public class Bow : MonoBehaviour
         //if yes fire and reset to 0 and put bow away
         if (totalCharge >= totalChargeNeeded)
         {
+            GetComponentInParent<PlayerStats>().stam -= 10;
+            totalArrows -= 1;
             Shoot();
             Debug.Log("Shot!");
             totalCharge = 0f;

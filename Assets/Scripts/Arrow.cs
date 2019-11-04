@@ -8,7 +8,11 @@ public class Arrow : MonoBehaviour
     public Rigidbody2D rb;
     private Vector3 firingPoint;
     public float maxProjectileDist;
-    
+    public LayerMask layer;
+    public float radius = 1f;
+    public int damage = 1;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +21,20 @@ public class Arrow : MonoBehaviour
 
     void Update()
     {
+
         MoveArrow();
+
+        Collider[] hits = Physics.OverlapSphere(transform.position, radius, layer);
+
+        if (hits.Length > 0)
+        {
+            Debug.Log("hit enemy");
+            hits[0].GetComponent<PlayerStats>().hp -= damage;
+            hits[0].GetComponent<PlayerStats>().CheckIfDead();
+            gameObject.SetActive(false);
+
+        }
+    
     }
     void MoveArrow()
     {

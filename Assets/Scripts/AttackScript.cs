@@ -12,19 +12,23 @@ public class AttackScript : MonoBehaviour
     public LayerMask enemyInRangePlayer;
     public Animator swordAnim;
     public GameObject attackPoint;
+    
 
     void Start()
     {
         swordAnim = gameObject.GetComponent<Animator>();
+        
     }
     private void Update()
     {
         if(RemainingAttackLag <= 0)
             // allow attack
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && GetComponentInParent<PlayerStats>().stam > 0)
             {
+                GetComponentInParent<PlayerStats>().stam -= 20;
                 swordAnim.SetTrigger("Swing");
+
                 /*Collider[] meleeHitBox = Physics.OverlapCapsule(meleeAttackPos.position, meleeAttackPos.position * 10f, meleeAttackRange, enemyInRangePlayer);
                 foreach (Collider collider in meleeHitBox)
                 {
@@ -35,6 +39,10 @@ public class AttackScript : MonoBehaviour
                     //collider.gameObject.GetComponent<Playerstats>().TakeDamage();
                 }
                 RemainingAttackLag = attackLag;*/
+            }
+            else
+            {
+                Debug.Log("Out of Stamina!");
             }
         }
         else

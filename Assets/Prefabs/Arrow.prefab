@@ -134,3 +134,8 @@ MonoBehaviour:
   projectileSpeed: 20
   rb: {fileID: 6183289166014322261}
   maxProjectileDist: 50
+  layer:
+    serializedVersion: 2
+    m_Bits: 1536
+  radius: 0.5
+  damage: 1

@@ -9,7 +9,9 @@ public class PlayerStats : MonoBehaviour
     public int atk;
     public int rngAtk;
     public int atkspd;
-    public int stam;
+    public float stam;
+    public int maxStam = 100;
+    public float stamRecharge = 5;
     public int ammo;
     public int lives;
     public float movespeed;
@@ -30,7 +32,10 @@ public class PlayerStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (stam < maxStam)
+        {
+            stam += Time.deltaTime * stamRecharge;
+        }
     }
 
     void LoadStats()

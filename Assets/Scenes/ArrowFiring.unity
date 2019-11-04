@@ -238,10 +238,14 @@ MonoBehaviour:
   rngAtk: 0
   atkspd: 0
   stam: 0
+  maxStam: 100
+  stamRecharge: 3
   ammo: 0
   lives: 0
   movespeed: 0
   dir: 0
+  bloodParticles: {fileID: 985971114648957060, guid: e0eb0e06da5ea194dafabe4d8454e6a9,
+    type: 3}
   player: {fileID: 0}
   playerPrefab: {fileID: 530952130}
   respawnPoint: {fileID: 1899102872}
@@ -320,10 +324,14 @@ MonoBehaviour:
   rngAtk: 0
   atkspd: 0
   stam: 0
+  maxStam: 100
+  stamRecharge: 3
   ammo: 0
   lives: 0
   movespeed: 0
   dir: 0
+  bloodParticles: {fileID: 985971114648957060, guid: e0eb0e06da5ea194dafabe4d8454e6a9,
+    type: 3}
   player: {fileID: 0}
   playerPrefab: {fileID: 781341035}
   respawnPoint: {fileID: 1899102872}
@@ -475,6 +483,11 @@ PrefabInstance:
       propertyPath: attackPoint
       value: 
       objectReference: {fileID: 1112609824}
+    - target: {fileID: 7315899225095823862, guid: 6c074bd79888dd94b853b0b0b023ec44,
+        type: 3}
+      propertyPath: totalArrows
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 781341036, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
@@ -706,11 +719,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5424316783016220806, guid: 6c074bd79888dd94b853b0b0b023ec44,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6f680b6217f7b074aae808aefb89a0ab, type: 2}
     - target: {fileID: 9090025359562717108, guid: 6c074bd79888dd94b853b0b0b023ec44,
         type: 3}
       propertyPath: m_Layer
@@ -721,11 +729,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5424316782181878258, guid: 6c074bd79888dd94b853b0b0b023ec44,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6f680b6217f7b074aae808aefb89a0ab, type: 2}
     - target: {fileID: 5424316782181878253, guid: 6c074bd79888dd94b853b0b0b023ec44,
         type: 3}
       propertyPath: m_Enabled
@@ -741,11 +744,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1875042809250108763, guid: 6c074bd79888dd94b853b0b0b023ec44,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6f680b6217f7b074aae808aefb89a0ab, type: 2}
     - target: {fileID: 781341036, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
       propertyPath: enemyInRangePlayer.m_Bits
       value: 512
@@ -793,6 +791,31 @@ PrefabInstance:
       propertyPath: attackPoint
       value: 
       objectReference: {fileID: 1532980177}
+    - target: {fileID: 5424316783016220806, guid: 6c074bd79888dd94b853b0b0b023ec44,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6f680b6217f7b074aae808aefb89a0ab, type: 2}
+    - target: {fileID: 5424316782181878258, guid: 6c074bd79888dd94b853b0b0b023ec44,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6f680b6217f7b074aae808aefb89a0ab, type: 2}
+    - target: {fileID: 1875042809250108763, guid: 6c074bd79888dd94b853b0b0b023ec44,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6f680b6217f7b074aae808aefb89a0ab, type: 2}
+    - target: {fileID: 7315899225095823862, guid: 6c074bd79888dd94b853b0b0b023ec44,
+        type: 3}
+      propertyPath: isCharging
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315899225095823862, guid: 6c074bd79888dd94b853b0b0b023ec44,
+        type: 3}
+      propertyPath: totalArrows
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 781341036, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
