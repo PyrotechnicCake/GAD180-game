@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
     //default stats
-    public int hp;
+    public float hp;
     public int atk;
     public int rngAtk;
     public int atkspd;

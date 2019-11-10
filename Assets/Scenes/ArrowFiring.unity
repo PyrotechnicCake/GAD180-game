@@ -1247,7 +1247,7 @@ GameObject:
   m_Layer: 0
   m_Name: Attack Point
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
@@ -1636,7 +1636,7 @@ GameObject:
   m_Layer: 0
   m_Name: Attack Point
   m_TagString: Untagged
-  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
@@ -1879,6 +1879,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1980157705}
+  - component: {fileID: 1980157706}
   m_Layer: 5
   m_Name: P1_UI
   m_TagString: Untagged
@@ -1910,6 +1911,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1980157706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980157704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9522d88606060884ea7b8ab2590e613b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myPlayer: {fileID: 781341035}
+  myUI: {fileID: 1980157704}
+  healthBar: {fileID: 0}
+  stamBar: {fileID: 0}
+  stockLives: {fileID: 0}
 --- !u!1 &2133934181
 GameObject:
   m_ObjectHideFlags: 0

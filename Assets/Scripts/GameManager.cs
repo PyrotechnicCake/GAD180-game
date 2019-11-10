@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     //intialize a stat set for both players
-    public int hp = 5;
+    public float hp = 5;
     public int atk = 1;
     public int rngAtk = 1;
     public int atkspd = 1;
