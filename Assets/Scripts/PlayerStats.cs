@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
     //default stats
+    public float maxhp;
     public float hp;
     public int atk;
     public int rngAtk;
@@ -13,7 +14,7 @@ public class PlayerStats : MonoBehaviour
     public int maxStam = 100;
     public float stamRecharge = 5;
     public int ammo;
-    public int lives;
+    public float lives;
     public float movespeed;
     public int dir;
     //Assigned gameobjects
@@ -40,6 +41,7 @@ public class PlayerStats : MonoBehaviour
 
     void LoadStats()
     {
+        maxhp = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().hp;
         hp = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().hp;
         atk = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().atk;
         rngAtk = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().rngAtk;
