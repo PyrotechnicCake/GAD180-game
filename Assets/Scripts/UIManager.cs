@@ -20,6 +20,7 @@ public class UIManager : MonoBehaviour
     //Initialize text UI
     public Text ammoNum;
     //Initialize timer
+    public int timer;
     public int minutes;
     public int seconds;
 
@@ -47,6 +48,7 @@ public class UIManager : MonoBehaviour
         arrows = (myPlayer.GetComponent<Bow>().totalArrows);
         ammoNum.text = arrows.ToString();
         //update timer
-
+        minutes = (timer / 60);
+        seconds = (timer - minutes * 60);
     }
 }
