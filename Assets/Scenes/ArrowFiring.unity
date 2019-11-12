@@ -888,6 +888,8 @@ MonoBehaviour:
   stamBar: {fileID: 827069104}
   stockLives: {fileID: 22376943}
   ammoNum: {fileID: 2144098564}
+  minutes: 0
+  seconds: 0
   playerHp: 0
   playerStam: 0
   playerLives: 0
@@ -994,17 +996,17 @@ PrefabInstance:
     - target: {fileID: 5424316783016220804, guid: 6c074bd79888dd94b853b0b0b023ec44,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.115
+      value: -5.66
       objectReference: {fileID: 0}
     - target: {fileID: 5424316783016220804, guid: 6c074bd79888dd94b853b0b0b023ec44,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.42
+      value: 3.6
       objectReference: {fileID: 0}
     - target: {fileID: 5424316783016220804, guid: 6c074bd79888dd94b853b0b0b023ec44,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.235
+      value: -1.54
       objectReference: {fileID: 0}
     - target: {fileID: 5424316783016220804, guid: 6c074bd79888dd94b853b0b0b023ec44,
         type: 3}
@@ -1131,6 +1133,16 @@ PrefabInstance:
         type: 3}
       propertyPath: totalArrows
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7166862824863903219, guid: 6c074bd79888dd94b853b0b0b023ec44,
+        type: 3}
+      propertyPath: defenseArea
+      value: 
+      objectReference: {fileID: 1520770028}
+    - target: {fileID: 8948828606020860650, guid: 6c074bd79888dd94b853b0b0b023ec44,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 781341036, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
@@ -1826,6 +1838,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1520770028 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 882282181586736135, guid: 6c074bd79888dd94b853b0b0b023ec44,
+    type: 3}
+  m_PrefabInstance: {fileID: 798919600}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1532980177
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,6 +2152,8 @@ MonoBehaviour:
   stamBar: {fileID: 850848375}
   stockLives: {fileID: 2133934183}
   ammoNum: {fileID: 169628891}
+  minutes: 0
+  seconds: 0
   playerHp: 0
   playerStam: 0
   playerLives: 0

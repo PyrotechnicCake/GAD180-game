@@ -25,10 +25,10 @@ public class Bow : MonoBehaviour
             isCharging = true;
             Debug.Log("charging");
         }
-        else
+        /*else
         {
             Debug.Log("Out of Stamina!");
-        }
+        }*/
         if(isCharging == true)
         {
             //charge

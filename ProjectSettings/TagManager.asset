@@ -10,6 +10,8 @@ TagManager:
   - Spawn point
   - Hellscape
   - Colosseum
+  - Arrow
+  - Sword
   layers:
   - Default
   - TransparentFX

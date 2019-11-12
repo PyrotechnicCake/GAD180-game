@@ -40,10 +40,10 @@ public class AttackScript : MonoBehaviour
                 }
                 RemainingAttackLag = attackLag;*/
             }
-            else
+            /*else
             {
                 Debug.Log("Out of Stamina!");
-            }
+            }*/
         }
         else
         {
