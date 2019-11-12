@@ -6,7 +6,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: hand
+  m_Name: Right Hand
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Swing
@@ -140,10 +140,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1102364477264839964}
-    m_Position: {x: 288, y: 120, z: 0}
+    m_Position: {x: 396, y: 48, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102282895538878798}
-    m_Position: {x: 288, y: 252, z: 0}
+    m_Position: {x: 384, y: 168, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
