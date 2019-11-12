@@ -17,20 +17,38 @@ public class UIManager : MonoBehaviour
     public Image healthBar;
     public Image stamBar;
     public Image stockLives;
+    //Initialize text UI
+    public Text ammoNum;
+    //Initialize timer
+    public int timer;
+    public int minutes;
+    public int seconds;
+
     //Initialize floats (must be floats not ints)
     public float playerHp;
     public float playerStam;
     public float playerLives;
+    //Initialize arrows
+    public int arrows;
 
     // Update is called once per frame
     void Update()
     {
+        //Update the UI
+        //update health
         playerHp = (myPlayer.GetComponent<PlayerStats>().hp / myPlayer.GetComponent<PlayerStats>().maxhp);
         healthBar.fillAmount = playerHp;
+        //update stamina
         playerStam = (myPlayer.GetComponent<PlayerStats>().stam / myPlayer.GetComponent<PlayerStats>().maxStam);
         stamBar.fillAmount = playerStam;
+        //update lives
         playerLives = (myPlayer.GetComponent<PlayerStats>().lives / 3);
         stockLives.fillAmount = playerLives;
-
+        //update arrows
+        arrows = (myPlayer.GetComponent<Bow>().totalArrows);
+        ammoNum.text = arrows.ToString();
+        //update timer
+        minutes = (timer / 60);
+        seconds = (timer - minutes * 60);
     }
 }
