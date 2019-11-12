@@ -19,18 +19,14 @@ public class UIManager : MonoBehaviour
     public Image stockLives;
     //Initialize text UI
     public Text ammoNum;
-    //Initialize timer
-    public int timer;
-    public int minutes;
-    public int seconds;
-
+    
     //Initialize floats (must be floats not ints)
     public float playerHp;
     public float playerStam;
     public float playerLives;
     //Initialize arrows
     public int arrows;
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -47,8 +43,5 @@ public class UIManager : MonoBehaviour
         //update arrows
         arrows = (myPlayer.GetComponent<Bow>().totalArrows);
         ammoNum.text = arrows.ToString();
-        //update timer
-        minutes = (timer / 60);
-        seconds = (timer - minutes * 60);
     }
 }
