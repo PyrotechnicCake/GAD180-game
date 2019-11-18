@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     int playerID = 0;
     string horz;
     string vert;
-
     
 
     private Vector3 moveDirection = Vector3.zero;
@@ -55,6 +54,8 @@ public class PlayerController : MonoBehaviour
         //  transform.Rotate(0, Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime, 0);
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
+
+   
     }
 
 }
