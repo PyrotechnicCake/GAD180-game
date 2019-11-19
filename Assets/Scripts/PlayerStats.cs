@@ -67,7 +67,10 @@ public class PlayerStats : MonoBehaviour
             //refill hp
             hp = 5;
             //give temporary invincibility
+           
         }
+
+       
     }
 
     void MeleeAttack()
@@ -77,4 +80,9 @@ public class PlayerStats : MonoBehaviour
         //if yes
         //GameObject.FindGameObjectWithTag("player1").GetComponent<GameManager>().Attack(GameObject.FindGameObjectWithTag("player1"), GameObject.FindGameObjectWithTag("player2"));
     }
+
+    
+
+   
+
 }

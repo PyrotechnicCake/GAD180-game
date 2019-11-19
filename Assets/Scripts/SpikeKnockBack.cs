@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class SpikeKnockBack : MonoBehaviour
 {
-    public Vector3 Knockback;
+    public float force = 10f;
     // Start is called before the first frame update
     void Start()
     {
-        //Knockback = (CharacterController);
+       
       
     }
 
@@ -16,5 +16,14 @@ public class SpikeKnockBack : MonoBehaviour
     void Update()
     {
        
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "player1")
+        {
+            Vector3 relativePos = other.transform.position - transform.position;
+            other.GetComponent<CharacterController>().Move(relativePos * force * Time.deltaTime);
+        }
+        Debug.Log(other.name);
     }
 }

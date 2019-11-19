@@ -10,6 +10,7 @@ public class AttackDamage : MonoBehaviour
     bool shieldFound = false;
     bool damagedPlayer;
 
+
   
     void Update()
     {
@@ -48,6 +49,5 @@ public class AttackDamage : MonoBehaviour
             shieldFound = false;
             damagedPlayer = false;
 
-        }
     }
 }

@@ -53,7 +53,7 @@ public class Bow : MonoBehaviour
         {
             //try to shoot
             AttemptShoot();   
-            Debug.Log("release");
+            //Debug.Log("release");
             isCharging = false;
             //destroy bow
             //instantiate sword and shield
