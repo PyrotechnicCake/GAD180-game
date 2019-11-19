@@ -23,7 +23,7 @@ public class Bow : MonoBehaviour
 
             //start charging
             isCharging = true;
-            Debug.Log("charging");
+            //Debug.Log("charging");
         }
         /*else
         {
@@ -38,7 +38,7 @@ public class Bow : MonoBehaviour
         {
             //try to shoot
             AttemptShoot();   
-            Debug.Log("release");
+            //Debug.Log("release");
             isCharging = false;
             //destroy bow
             //instantiate sword and shield
@@ -54,7 +54,7 @@ public class Bow : MonoBehaviour
             GetComponentInParent<PlayerStats>().stam -= 10;
             totalArrows -= 1;
             Shoot();
-            Debug.Log("Shot!");
+            //Debug.Log("Shot!");
             totalCharge = 0f;
             Destroy(bowPrefab);
 
@@ -63,7 +63,7 @@ public class Bow : MonoBehaviour
         else
         {
             totalCharge = 0f;
-            Debug.Log("failed");
+            //Debug.Log("failed");
             Destroy(bowPrefab);
         }
     }

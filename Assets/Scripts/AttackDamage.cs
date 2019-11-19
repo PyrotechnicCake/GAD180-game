@@ -8,6 +8,7 @@ public class AttackDamage : MonoBehaviour
     public float radius = 1f;
     public int damage = 1;
 
+
   
     void Update()
     {
@@ -16,10 +17,11 @@ public class AttackDamage : MonoBehaviour
         if(hits.Length > 0)
         {
             Debug.Log("hit enemy");
+            Debug.Log(hits);
             hits[0].GetComponent<PlayerStats>().hp -= damage;
             hits[0].GetComponent<PlayerStats>().CheckIfDead();
-            gameObject.SetActive(false);
-
+            //gameObject.SetActive(false);
         }
+
     }
 }
