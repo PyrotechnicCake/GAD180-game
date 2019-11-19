@@ -12,10 +12,25 @@ public class Bow : MonoBehaviour
     public bool isCharging = false;
     public int totalArrows = 10;
 
+    public int playerID;
+    string chargeBow;
 
+    void Start()
+    {
+        if (playerID == 0)
+        {
+            chargeBow = "Fire2";
+        }
+
+        else
+
+        {
+            chargeBow = "Fire5";
+        }
+    }
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && GetComponentInParent<PlayerStats>().stam > 0 && totalArrows > 0)
+        if (Input.GetButtonDown(chargeBow) && GetComponentInParent<PlayerStats>().stam > 0 && totalArrows > 0 && GetComponentInChildren<Shield>().shieldUp == false)
         {
             //destroy sword and shield
             //instantiate bow
@@ -23,7 +38,7 @@ public class Bow : MonoBehaviour
 
             //start charging
             isCharging = true;
-            Debug.Log("charging");
+            //Debug.Log("charging");
         }
         /*else
         {
@@ -34,7 +49,7 @@ public class Bow : MonoBehaviour
             //charge
             totalCharge += Time.deltaTime;
         }
-        if (Input.GetButtonUp("Fire1"))
+        if (Input.GetButtonUp(chargeBow))
         {
             //try to shoot
             AttemptShoot();   
@@ -54,7 +69,7 @@ public class Bow : MonoBehaviour
             GetComponentInParent<PlayerStats>().stam -= 10;
             totalArrows -= 1;
             Shoot();
-            Debug.Log("Shot!");
+            //Debug.Log("Shot!");
             totalCharge = 0f;
             Destroy(bowPrefab);
 
@@ -63,7 +78,7 @@ public class Bow : MonoBehaviour
         else
         {
             totalCharge = 0f;
-            Debug.Log("failed");
+            //Debug.Log("failed");
             Destroy(bowPrefab);
         }
     }

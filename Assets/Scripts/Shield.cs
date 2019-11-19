@@ -7,20 +7,31 @@ public class Shield : MonoBehaviour
     public bool shieldUp = false;
     public Animator shieldAnim;
     public GameObject defenseArea;
-    
+    public int playerID;
+    string defend;
+
     void Start()
     {
         shieldAnim = gameObject.GetComponent<Animator>();
+
+        if (playerID == 0)
+        {
+            defend = "Fire3";
+        }
+        else
+        {
+            defend = "Fire6";
+        }
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetButtonDown(defend))
         {
             shieldUp = true;
             shieldAnim.SetTrigger("Defend");
         }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        if (Input.GetButtonUp(defend))
         {
             shieldAnim.SetTrigger("Lower");
             shieldUp = false;

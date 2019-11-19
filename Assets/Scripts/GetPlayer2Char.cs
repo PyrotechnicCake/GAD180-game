@@ -6,10 +6,13 @@ public class GetPlayer2Char : MonoBehaviour
 {
     public GameObject demon, imp, snauz;
     private readonly string p2SelectedCharacter = "P2SelectedCharacter";
+    public int playerID = 1;
 
     // Start is called before the first frame update
     void Start()
     {
+        
+
         int getP2Character;
         getP2Character = PlayerPrefs.GetInt(p2SelectedCharacter);
         switch (getP2Character)
@@ -26,6 +29,10 @@ public class GetPlayer2Char : MonoBehaviour
             default:
                 break;
         }
+        GetComponentInChildren<PlayerController>().playerID = 1;
+        GetComponentInChildren<Shield>().playerID = 1;
+        GetComponentInChildren<AttackScript>().playerID = 1;
+        GetComponentInChildren<Bow>().playerID = 1;
 
     }
 

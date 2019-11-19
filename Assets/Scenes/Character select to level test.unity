@@ -141,9 +141,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96693ea3e2a28e14897129ebaca57dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  demon: {fileID: 50972211342437570, guid: 36f6daef307d5554ebd913301d3f994a, type: 3}
-  imp: {fileID: 7385811820277866786, guid: b94c58824ec5db14a8be1af9d3ae71e9, type: 3}
-  snauz: {fileID: 5940133743110778329, guid: 37f12aa681b058f4b9c87b4fb58418b6, type: 3}
+  demon: {fileID: 5424316783016220803, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
+  imp: {fileID: 8794733355147507214, guid: b94c58824ec5db14a8be1af9d3ae71e9, type: 3}
+  snauz: {fileID: 8794733355147507214, guid: 37f12aa681b058f4b9c87b4fb58418b6, type: 3}
+  playerID: 1
 --- !u!4 &13396617
 Transform:
   m_ObjectHideFlags: 0
@@ -152,7 +153,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13396615}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 60.03, y: 112.36, z: -28.32}
+  m_LocalPosition: {x: 60.03, y: 112.79, z: -28.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -330,7 +331,7 @@ GameObject:
   - component: {fileID: 1036343572}
   m_Layer: 0
   m_Name: Player 1 Character
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -347,9 +348,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb90bbf9abb7efc4da1966655b2db263, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  demon: {fileID: 50972211342437570, guid: 36f6daef307d5554ebd913301d3f994a, type: 3}
-  imp: {fileID: 7385811820277866786, guid: b94c58824ec5db14a8be1af9d3ae71e9, type: 3}
-  snauz: {fileID: 5940133743110778329, guid: 37f12aa681b058f4b9c87b4fb58418b6, type: 3}
+  demon: {fileID: 5424316783016220803, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
+  imp: {fileID: 8794733355147507214, guid: b94c58824ec5db14a8be1af9d3ae71e9, type: 3}
+  snauz: {fileID: 8794733355147507214, guid: 37f12aa681b058f4b9c87b4fb58418b6, type: 3}
+  playerID: 0
+  spawnPoint: {fileID: 1036343571}
 --- !u!4 &1036343573
 Transform:
   m_ObjectHideFlags: 0
@@ -358,7 +361,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036343571}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 67, y: 111.69, z: -32.62}
+  m_LocalPosition: {x: 67, y: 112.2, z: -32.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

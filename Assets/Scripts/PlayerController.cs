@@ -8,13 +8,17 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 8.0f;
     public float gravity = 20.0f;
     public float rotSpeed = 90f;
-    int playerID = 0;
+    public int playerID;
     string horz;
     string vert;
+    string rSHorz;
+    string rSVert;
     
 
     private Vector3 moveDirection = Vector3.zero;
+    private Quaternion lookDirection;
     private CharacterController controller;
+    float angle;
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -23,6 +27,8 @@ public class PlayerController : MonoBehaviour
         {
             horz = "HorizontalP1";
             vert = "VerticalP1";
+            rSHorz = "HorizontalRSP1";
+            rSVert = "VerticalRSP1";
         }
 
         else
@@ -30,7 +36,10 @@ public class PlayerController : MonoBehaviour
         {
             horz = "HorizontalP2";
             vert = "VerticalP2";
+            rSHorz = "HorizontalRSP2";
+            rSVert = "VerticalRSP2";
         }
+       
     }
 
     void Update()
@@ -41,6 +50,8 @@ public class PlayerController : MonoBehaviour
            // moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
         }
+        angle = Mathf.Atan2(Input.GetAxis(rSHorz), Input.GetAxis(rSVert)) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, angle, 0);
 
         if (GetComponentInChildren<Shield>().shieldUp == true)
         {
@@ -52,18 +63,16 @@ public class PlayerController : MonoBehaviour
         }
 
 
-            RaycastHit Hit;
+            /*RaycastHit Hit;
 
         if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out Hit, 100f))
         {
             Vector3 lookPosition = Hit.point;
             transform.LookAt(new Vector3(lookPosition.x, transform.position.y, lookPosition.z));
-        }
+        }*/
         //  transform.Rotate(0, Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime, 0);
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
-
-   
     }
 
 }

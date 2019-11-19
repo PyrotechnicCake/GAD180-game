@@ -12,19 +12,35 @@ public class AttackScript : MonoBehaviour
     public LayerMask enemyInRangePlayer;
     public Animator swordAnim;
     public GameObject attackPoint;
-    
+
+    public int playerID;
+    string swingSword;
+
 
     void Start()
     {
         swordAnim = gameObject.GetComponent<Animator>();
-        
+        if (playerID == 0)
+        {
+            swingSword = "Fire1";
+            
+        }
+
+        else
+
+        {
+            swingSword = "Fire4";
+        }
+
     }
+
+
     private void Update()
     {
         if(RemainingAttackLag <= 0)
             // allow attack
         {
-            if (Input.GetKeyDown(KeyCode.Space) && GetComponentInParent<PlayerStats>().stam > 0)
+            if (Input.GetButtonDown(swingSword) && GetComponentInParent<PlayerStats>().stam > 0)
             {
                 GetComponentInParent<PlayerStats>().stam -= 20;
                 swordAnim.SetTrigger("Swing");

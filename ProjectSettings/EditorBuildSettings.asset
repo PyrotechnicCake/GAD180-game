@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/ArrowFiring.unity
+    guid: 126235c422da3bb4190018e112fe7643
+  - enabled: 1
+    path: 'Assets/Scenes/Hellscape 2 Version #2.unity'
+    guid: 7972467dae73f9645bce2379cfc71b22
   m_configObjects: {}

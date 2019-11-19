@@ -1752,6 +1752,11 @@ PrefabInstance:
       propertyPath: attackPoint
       value: 
       objectReference: {fileID: 1532980177}
+    - target: {fileID: 3701156007377577512, guid: 6c074bd79888dd94b853b0b0b023ec44,
+        type: 3}
+      propertyPath: playerID
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7315899225095823862, guid: 6c074bd79888dd94b853b0b0b023ec44,
         type: 3}
       propertyPath: isCharging
@@ -1761,6 +1766,16 @@ PrefabInstance:
         type: 3}
       propertyPath: totalArrows
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315899225095823862, guid: 6c074bd79888dd94b853b0b0b023ec44,
+        type: 3}
+      propertyPath: playerID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7166862824863903219, guid: 6c074bd79888dd94b853b0b0b023ec44,
+        type: 3}
+      propertyPath: playerID
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5424316783016220806, guid: 6c074bd79888dd94b853b0b0b023ec44,
         type: 3}
@@ -1781,6 +1796,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5424316783016220800, guid: 6c074bd79888dd94b853b0b0b023ec44,
+        type: 3}
+      propertyPath: playerID
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4850019215136761527, guid: 6c074bd79888dd94b853b0b0b023ec44,
         type: 3}

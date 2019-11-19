@@ -24,7 +24,7 @@ public class Selector : MonoBehaviour
     private readonly string p2SelectedCharacter = "P2SelectedCharacter";
     private readonly string selectedLevel = "SelectedLevel";
 
-    private void Awake()
+    void Awake()
     {
         p1CharacterPosition = demonP1.transform.position;
         offScreen = impP1.transform.position;
@@ -254,7 +254,7 @@ public class Selector : MonoBehaviour
             hellscape 1*/
         if (levelInt == 1)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
         }
         else
         {
