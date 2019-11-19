@@ -42,9 +42,17 @@ public class PlayerController : MonoBehaviour
             moveDirection *= speed;
         }
 
-        
+        if (GetComponentInChildren<Shield>().shieldUp == true)
+        {
+            speed = 3f;
+        }
+        if (GetComponentInChildren<Shield>().shieldUp == false)
+        {
+            speed = 6f;
+        }
 
-        RaycastHit Hit;
+
+            RaycastHit Hit;
 
         if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out Hit, 100f))
         {

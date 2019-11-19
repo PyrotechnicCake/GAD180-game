@@ -8,7 +8,7 @@ public class SpikeKnockBack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Knockback = (CharacterController);
+        //Knockback = (CharacterController);
       
     }
 
