@@ -24,6 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Character select trial.unity
     guid: 9d005136ae7beae4f823ae75629ddfe6
   - enabled: 0
-    path: Assets/__DELETED_GUID_Trash/53dfaf0912e1db04d90cb8ad0d9f030d
-    guid: 53dfaf0912e1db04d90cb8ad0d9f030d
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
