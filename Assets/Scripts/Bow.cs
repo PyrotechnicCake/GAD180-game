@@ -71,7 +71,6 @@ public class Bow : MonoBehaviour
             Shoot();
             //Debug.Log("Shot!");
             totalCharge = 0f;
-            Destroy(bowPrefab);
 
         }
         //if no dont and reset to 0 and put bow away

@@ -1777,6 +1777,16 @@ PrefabInstance:
       propertyPath: playerID
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4850019215136761527, guid: 6c074bd79888dd94b853b0b0b023ec44,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850019215136761527, guid: 6c074bd79888dd94b853b0b0b023ec44,
+        type: 3}
+      propertyPath: m_Name
+      value: Shield2
+      objectReference: {fileID: 0}
     - target: {fileID: 5424316783016220806, guid: 6c074bd79888dd94b853b0b0b023ec44,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1801,16 +1811,6 @@ PrefabInstance:
         type: 3}
       propertyPath: playerID
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850019215136761527, guid: 6c074bd79888dd94b853b0b0b023ec44,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850019215136761527, guid: 6c074bd79888dd94b853b0b0b023ec44,
-        type: 3}
-      propertyPath: m_Name
-      value: Shield2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 781341036, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
