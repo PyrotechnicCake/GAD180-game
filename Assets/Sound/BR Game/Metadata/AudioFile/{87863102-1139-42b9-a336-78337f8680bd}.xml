@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{87863102-1139-42b9-a336-78337f8680bd}">
+		<property name="assetPath">
+			<value>Weapons/BR_Game_Sword_Swing.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.45333333333333331</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8890ea18-158c-4674-94e8-79a3be63da61}</destination>
+		</relationship>
+	</object>
+</objects>
