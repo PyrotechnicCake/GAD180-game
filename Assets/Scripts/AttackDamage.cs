@@ -11,15 +11,15 @@ public class AttackDamage : MonoBehaviour
     bool damagedPlayer;
 
 
-  
+
     void Update()
     {
         Collider[] hits = Physics.OverlapSphere(transform.position, radius, layer);
 
-        if(hits.Length > 0)
+        if (hits.Length > 0)
         {
             Debug.Log("hit enemy");
-            foreach(Collider col in hits)
+            foreach (Collider col in hits)
             {
                 if (col.GetComponentInParent<Shield>() != null)
                 {
@@ -33,21 +33,22 @@ public class AttackDamage : MonoBehaviour
             }
             if (!shieldFound)
             {
-                foreach(Collider col in hits)
+                foreach (Collider col in hits)
                 {
-                    if(col.GetComponent<PlayerStats>() != null && !damagedPlayer)
+                    if (col.GetComponent<PlayerStats>() != null && !damagedPlayer)
                     {
                         col.GetComponent<PlayerStats>().hp -= damage;
                         col.GetComponent<PlayerStats>().CheckIfDead();
                         damagedPlayer = true;
                     }
                 }
-                
+
             }
-            
+
             gameObject.SetActive(false);
             shieldFound = false;
             damagedPlayer = false;
 
+        }
     }
 }

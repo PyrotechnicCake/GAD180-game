@@ -11,14 +11,14 @@ public class GetPlayer1Char : MonoBehaviour
 
     // Start is called before the first frame update
 
-    void SetPlayerID()
+    /*void SetPlayerID()
     {
         GetComponentInChildren<PlayerController>().playerID = 0;
         GetComponentInChildren<Shield>().playerID = 0;
         GetComponentInChildren<AttackScript>().playerID = 0;
         GetComponentInChildren<Bow>().playerID = 0;
         Debug.Log("playerID set to " + GetComponentInChildren<Shield>().playerID);
-    }
+    }*/
     void Awake()
     {
         int getP1Character;
@@ -44,7 +44,7 @@ public class GetPlayer1Char : MonoBehaviour
     void Start()
     {
 
-        SetPlayerID();
+        //SetPlayerID();
     }
 
     

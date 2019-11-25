@@ -351,7 +351,7 @@ MonoBehaviour:
   demon: {fileID: 5424316783016220803, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
   imp: {fileID: 8794733355147507214, guid: b94c58824ec5db14a8be1af9d3ae71e9, type: 3}
   snauz: {fileID: 8794733355147507214, guid: 37f12aa681b058f4b9c87b4fb58418b6, type: 3}
-  playerID: 0
+  playerID: 1
   spawnPoint: {fileID: 1036343571}
 --- !u!4 &1036343573
 Transform:

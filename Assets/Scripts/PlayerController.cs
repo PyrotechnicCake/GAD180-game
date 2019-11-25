@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     private Quaternion lookDirection;
     private CharacterController controller;
     float angle;
+    
     void Start()
     {
         controller = GetComponent<CharacterController>();

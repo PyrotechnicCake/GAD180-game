@@ -37,6 +37,10 @@ public class PlayerStats : MonoBehaviour
         {
             stam += Time.deltaTime * stamRecharge;
         }
+        if(stam > maxStam)
+        {
+            stam = maxStam;
+        }
     }
 
     void LoadStats()
