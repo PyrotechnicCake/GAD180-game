@@ -8,10 +8,11 @@ public class FallDeath : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "player1")
+        if (other.gameObject.tag == "player1"|| other.gameObject.tag == "player2")
 
         {
-            transform.gameObject.GetComponent<PlayerStats>;
+            gameObject.GetComponent<PlayerStats>().hp -= 5;
+            gameObject.GetComponent<PlayerStats>().CheckIfDead();
         }
     }
 }
