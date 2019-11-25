@@ -15,15 +15,27 @@ public class Bow : MonoBehaviour
     public int playerID;
     string chargeBow;
 
+    private void Awake()
+    {
+        if (this.gameObject.CompareTag("player1"))
+        {
+            playerID = 0;
+        }
+        if (this.gameObject.CompareTag("player2"))
+        {
+            playerID = 1;
+        }
+    }
+
     void Start()
     {
+        
+
         if (playerID == 0)
         {
             chargeBow = "Fire2";
         }
-
         else
-
         {
             chargeBow = "Fire5";
         }

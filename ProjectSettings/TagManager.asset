@@ -12,6 +12,8 @@ TagManager:
   - Colosseum
   - Arrow
   - Sword
+  - Player 1 Spawn
+  - Player 2 Spawn
   layers:
   - Default
   - TransparentFX

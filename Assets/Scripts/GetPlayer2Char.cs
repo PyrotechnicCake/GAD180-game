@@ -18,22 +18,31 @@ public class GetPlayer2Char : MonoBehaviour
         switch (getP2Character)
         {
             case 1:
-                Instantiate(imp);
+                GameObject playerImp = Instantiate(imp);
+                playerImp.gameObject.tag = "player2";
+                playerImp.gameObject.layer = 10;
+                playerImp.transform.position = GameObject.FindGameObjectWithTag("Player 2 Spawn").transform.position;
                 break;
             case 2:
-                Instantiate(snauz);
+                GameObject playerSnauz = Instantiate(snauz);
+                playerSnauz.gameObject.tag = "player2";
+                playerSnauz.gameObject.layer = 10;
+                playerSnauz.transform.position = GameObject.FindGameObjectWithTag("Player 2 Spawn").transform.position;
                 break;
             case 3:
-                Instantiate(demon);
+                GameObject playerDemon = Instantiate(demon);
+                playerDemon.gameObject.tag = "player2";
+                playerDemon.gameObject.layer = 10;
+                playerDemon.transform.position = GameObject.FindGameObjectWithTag("Player 2 Spawn").transform.position;
                 break;
             default:
                 break;
         }
-        GetComponentInChildren<PlayerController>().playerID = 1;
+        /*GetComponentInChildren<PlayerController>().playerID = 1;
         GetComponentInChildren<Shield>().playerID = 1;
         GetComponentInChildren<AttackScript>().playerID = 1;
         GetComponentInChildren<Bow>().playerID = 1;
-
+        */
     }
 
 }

@@ -26,16 +26,22 @@ public class GetPlayer1Char : MonoBehaviour
         switch (getP1Character)
         {
             case 1:
-                Instantiate(imp);
-                imp.transform.parent = GameObject.FindGameObjectWithTag("Respawn").transform;
+                GameObject playerImp = Instantiate(imp);
+                playerImp.gameObject.tag = "player1";
+                playerImp.gameObject.layer = 9;
+                playerImp.transform.position = GameObject.FindGameObjectWithTag("Player 1 Spawn").transform.position;
                 break;
             case 2:
-                Instantiate(snauz);
-                snauz.transform.parent = GameObject.FindGameObjectWithTag("Respawn").transform;
+                GameObject playerSnauz = Instantiate(snauz);
+                playerSnauz.gameObject.tag = "player1";
+                playerSnauz.gameObject.layer = 9;
+                playerSnauz.transform.position = GameObject.FindGameObjectWithTag("Player 1 Spawn").transform.position;
                 break;
             case 3:
-                Instantiate(demon);
-                demon.transform.parent = GameObject.FindGameObjectWithTag("Respawn").transform;
+                GameObject playerDemon = Instantiate(demon);
+                playerDemon.gameObject.tag = "player1";
+                playerDemon.gameObject.layer = 9;
+                playerDemon.transform.position = GameObject.FindGameObjectWithTag("Player 1 Spawn").transform.position;
                 break;
             default:
                 break;

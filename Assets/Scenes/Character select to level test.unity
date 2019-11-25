@@ -123,8 +123,8 @@ GameObject:
   - component: {fileID: 13396617}
   - component: {fileID: 13396616}
   m_Layer: 0
-  m_Name: Player 2 Character
-  m_TagString: Untagged
+  m_Name: Player 2 Spawn
+  m_TagString: Player 2 Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,8 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demon: {fileID: 5424316783016220803, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
-  imp: {fileID: 8794733355147507214, guid: b94c58824ec5db14a8be1af9d3ae71e9, type: 3}
-  snauz: {fileID: 8794733355147507214, guid: 37f12aa681b058f4b9c87b4fb58418b6, type: 3}
+  imp: {fileID: 410317613402411279, guid: b94c58824ec5db14a8be1af9d3ae71e9, type: 3}
+  snauz: {fileID: 410317613402411279, guid: 37f12aa681b058f4b9c87b4fb58418b6, type: 3}
   playerID: 1
 --- !u!4 &13396617
 Transform:
@@ -153,7 +153,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13396615}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 60.03, y: 112.79, z: -28.32}
+  m_LocalPosition: {x: 66.7, y: 112.79, z: -39.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -330,8 +330,8 @@ GameObject:
   - component: {fileID: 1036343573}
   - component: {fileID: 1036343572}
   m_Layer: 0
-  m_Name: Player 1 Character
-  m_TagString: Respawn
+  m_Name: Player 1 Spawn
+  m_TagString: Player 1 Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -349,9 +349,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demon: {fileID: 5424316783016220803, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
-  imp: {fileID: 8794733355147507214, guid: b94c58824ec5db14a8be1af9d3ae71e9, type: 3}
-  snauz: {fileID: 8794733355147507214, guid: 37f12aa681b058f4b9c87b4fb58418b6, type: 3}
-  playerID: 1
+  imp: {fileID: 410317613402411279, guid: b94c58824ec5db14a8be1af9d3ae71e9, type: 3}
+  snauz: {fileID: 410317613402411279, guid: 37f12aa681b058f4b9c87b4fb58418b6, type: 3}
+  playerID: 0
   spawnPoint: {fileID: 1036343571}
 --- !u!4 &1036343573
 Transform:
@@ -378,6 +378,7 @@ GameObject:
   - component: {fileID: 1086147956}
   - component: {fileID: 1086147955}
   - component: {fileID: 1086147954}
+  - component: {fileID: 1086147957}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -443,9 +444,23 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086147953}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 66.83, y: 164.23, z: -35.26}
+  m_LocalPosition: {x: 66.83, y: 139.6, z: -35.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1086147957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086147953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f33f7b8413865ca4c9883862ef12aa69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distBetweenPlayers: 0
+  maxHeight: 200

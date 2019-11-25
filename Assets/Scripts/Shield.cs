@@ -12,6 +12,15 @@ public class Shield : MonoBehaviour
 
     void Start()
     {
+        if (GetComponentInParent<PlayerController>().gameObject.CompareTag("player1"))
+        {
+            playerID = 0;
+        }
+        if (GetComponentInParent<PlayerController>().gameObject.CompareTag("player2"))
+        {
+            playerID = 1;
+        }
+
         shieldAnim = gameObject.GetComponent<Animator>();
 
         if (playerID == 0)

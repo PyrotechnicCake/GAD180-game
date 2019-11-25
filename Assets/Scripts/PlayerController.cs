@@ -22,6 +22,14 @@ public class PlayerController : MonoBehaviour
     
     void Start()
     {
+        if (this.gameObject.CompareTag("player1"))
+        {
+            playerID = 0;
+        }
+        if (this.gameObject.CompareTag("player2"))
+        {
+            playerID = 1;
+        }
         controller = GetComponent<CharacterController>();
 
         if (playerID == 0)
@@ -41,6 +49,7 @@ public class PlayerController : MonoBehaviour
             rSVert = "VerticalRSP2";
         }
        
+
     }
 
     void Update()
@@ -62,6 +71,7 @@ public class PlayerController : MonoBehaviour
         {
             speed = 6f;
         }
+
 
 
             /*RaycastHit Hit;

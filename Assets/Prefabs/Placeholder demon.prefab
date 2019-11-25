@@ -1,5 +1,53 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1112609824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1112609825}
+  - component: {fileID: 1112609826}
+  m_Layer: 0
+  m_Name: Attack Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1112609825
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112609824}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.16, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6762002267500510273}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1112609826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112609824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e9abe797cc324642a3520f56954d079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer:
+    serializedVersion: 2
+    m_Bits: 1024
+  radius: 0.5
+  damage: 1
 --- !u!1 &882282181586736135
 GameObject:
   m_ObjectHideFlags: 0
@@ -40,7 +88,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882282181586736135}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 2.97, z: 1}
@@ -65,8 +113,8 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2347384046160376871}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+  m_IsTrigger: 1
+  m_Enabled: 0
   m_Radius: 0.43
   m_Height: 0.41
   m_Direction: 0
@@ -84,8 +132,8 @@ GameObject:
   - component: {fileID: 1875042809250108763}
   - component: {fileID: 6108068790258576911}
   - component: {fileID: 3701156007377577512}
-  m_Layer: 9
-  m_Name: right hand
+  m_Layer: 0
+  m_Name: handp1
   m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -187,9 +235,9 @@ MonoBehaviour:
   meleeAttackRange: 0.4
   enemyInRangePlayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   swordAnim: {fileID: 6108068790258576911}
-  attackPoint: {fileID: 2347384046160376871}
+  attackPoint: {fileID: 1112609824}
   playerID: 0
 --- !u!1 &4850019215136761527
 GameObject:
@@ -203,8 +251,8 @@ GameObject:
   - component: {fileID: 1129974322372630772}
   - component: {fileID: 8803908433547976983}
   - component: {fileID: 4372488983341194761}
-  m_Layer: 0
-  m_Name: Shield
+  m_Layer: 9
+  m_Name: Shield1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -300,9 +348,9 @@ GameObject:
   - component: {fileID: 5424316783016220800}
   - component: {fileID: 2133790471}
   - component: {fileID: 7315899225095823862}
-  - component: {fileID: 781341036}
+  - component: {fileID: 781341044}
   m_Layer: 9
-  m_Name: Placeholder Demon
+  m_Name: Placeholder demon
   m_TagString: player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -315,7 +363,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5424316783016220803}
-  m_LocalRotation: {x: -0, y: -0.364287, z: -0, w: 0.93128675}
+  m_LocalRotation: {x: 0, y: -0.3642835, z: 0, w: 0.9312881}
   m_LocalPosition: {x: -7.45587, y: 3.652, z: -3.5404902}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -440,7 +488,7 @@ MonoBehaviour:
   isCharging: 0
   totalArrows: 10
   playerID: 0
---- !u!114 &781341036
+--- !u!114 &781341044
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -449,18 +497,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 5424316783016220803}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03c0d81929d6c5b4b982485d915fa46e, type: 3}
+  m_Script: {fileID: 11500000, guid: f777448a9617deb439414447ef5b8276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackLag: 0.5
-  meleeAttackPos: {fileID: 2347384046160376868}
-  meleeAttackRange: 0.6
-  enemyInRangePlayer:
-    serializedVersion: 2
-    m_Bits: 0
-  swordAnim: {fileID: 0}
-  attackPoint: {fileID: 0}
-  playerID: 0
+  maxhp: 0
+  hp: 0
+  atk: 0
+  rngAtk: 0
+  atkspd: 0
+  stam: 0
+  maxStam: 100
+  stamRecharge: 3
+  ammo: 0
+  lives: 0
+  movespeed: 0
+  dir: 0
+  bloodParticles: {fileID: 985971114648957060, guid: e0eb0e06da5ea194dafabe4d8454e6a9,
+    type: 3}
+  player: {fileID: 0}
+  playerPrefab: {fileID: 5424316783016220803}
+  respawnPoint: {fileID: 0}
 --- !u!1 &7127219530257039504
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,7 +526,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7621218750981338024}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: FirePosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -711,11 +767,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2347384046446674625, guid: 8293957b134163346b002b843e0fc448,
         type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 2347384046446674625, guid: 8293957b134163346b002b843e0fc448,
-        type: 3}
       propertyPath: m_TagString
       value: Sword
       objectReference: {fileID: 0}
@@ -791,15 +842,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8293957b134163346b002b843e0fc448, type: 3}
---- !u!1 &2347384046160376871 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2347384046446674625, guid: 8293957b134163346b002b843e0fc448,
-    type: 3}
-  m_PrefabInstance: {fileID: 823228134}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2347384046160376868 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2347384046446674626, guid: 8293957b134163346b002b843e0fc448,
+    type: 3}
+  m_PrefabInstance: {fileID: 823228134}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2347384046160376871 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2347384046446674625, guid: 8293957b134163346b002b843e0fc448,
     type: 3}
   m_PrefabInstance: {fileID: 823228134}
   m_PrefabAsset: {fileID: 0}
@@ -814,11 +865,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sword
-      objectReference: {fileID: 0}
-    - target: {fileID: 9209769936824443357, guid: 0bdc556768634a34c836df49ebcbdaac,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 9209769936824443357, guid: 0bdc556768634a34c836df49ebcbdaac,
         type: 3}
@@ -895,8 +941,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.5000014
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 216153643164479561, guid: 0bdc556768634a34c836df49ebcbdaac, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bdc556768634a34c836df49ebcbdaac, type: 3}
 --- !u!4 &6762002267500510273 stripped
 Transform:

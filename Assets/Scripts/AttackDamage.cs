@@ -10,7 +10,17 @@ public class AttackDamage : MonoBehaviour
     bool shieldFound = false;
     bool damagedPlayer;
 
-
+    private void Start()
+    {
+        if (GetComponentInParent<PlayerController>().gameObject.layer == 9)
+        {
+            layer = 10;
+        }
+        if (GetComponentInParent<PlayerController>().gameObject.layer == 10)
+        {
+            layer = 9;
+        }
+    }
 
     void Update()
     {
