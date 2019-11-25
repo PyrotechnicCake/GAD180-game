@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class FallDeath : MonoBehaviour
 {
-    [SerializeField] private Transform Player;
-    [SerializeField] private Transform RespawnPoint;
+    public GameObject DeathPit;
 
     private void OnTriggerEnter(Collider other)
     {
-        Player.transform.position = RespawnPoint.transform.position;
+        if (other.gameObject.tag == "player1")
+
+        {
+            transform.gameObject.GetComponent<PlayerStats>;
+        }
     }
 }
