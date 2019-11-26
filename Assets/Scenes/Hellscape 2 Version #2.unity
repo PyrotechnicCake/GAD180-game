@@ -5555,7 +5555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c17be1faeb94814690e0f9cb44ed3fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeathPit: {fileID: 0}
+  DeathPit: {fileID: 1171448711}
 --- !u!1 &1189286453
 GameObject:
   m_ObjectHideFlags: 0
@@ -8672,10 +8672,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2133790471, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
-      propertyPath: m_StepOffset
-      value: 1.5
-      objectReference: {fileID: 0}
     - target: {fileID: 781341044, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
       propertyPath: respawnPoint
       value: 
@@ -8687,6 +8683,10 @@ PrefabInstance:
     - target: {fileID: 781341044, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
       propertyPath: hp
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133790471, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
+      propertyPath: m_StepOffset
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
