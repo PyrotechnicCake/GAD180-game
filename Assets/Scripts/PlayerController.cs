@@ -41,7 +41,6 @@ public class PlayerController : MonoBehaviour
         }
 
         else
-
         {
             horz = "HorizontalP2";
             vert = "VerticalP2";

@@ -17,7 +17,8 @@ public class AttackScript : MonoBehaviour
     string swingSword;
 
 
-    private void Awake()
+
+    void Start()
     {
         if (GetComponentInParent<PlayerController>().gameObject.CompareTag("player1"))
         {
@@ -28,21 +29,15 @@ public class AttackScript : MonoBehaviour
         {
             playerID = 1;
         }
-    }
-
-    void Start()
-    {
-        
 
         swordAnim = gameObject.GetComponent<Animator>();
+
         if (playerID == 0)
         {
             swingSword = "Fire1";
             
         }
-
-        else
-
+        if (playerID == 1)
         {
             swingSword = "Fire4";
         }

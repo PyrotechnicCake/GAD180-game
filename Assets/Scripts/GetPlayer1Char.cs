@@ -43,8 +43,6 @@ public class GetPlayer1Char : MonoBehaviour
                 playerDemon.gameObject.layer = 9;
                 playerDemon.transform.position = GameObject.FindGameObjectWithTag("Player 1 Spawn").transform.position;
                 break;
-            default:
-                break;
         }
     }
     void Start()

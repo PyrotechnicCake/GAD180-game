@@ -35,8 +35,6 @@ public class GetPlayer2Char : MonoBehaviour
                 playerDemon.gameObject.layer = 10;
                 playerDemon.transform.position = GameObject.FindGameObjectWithTag("Player 2 Spawn").transform.position;
                 break;
-            default:
-                break;
         }
         /*GetComponentInChildren<PlayerController>().playerID = 1;
         GetComponentInChildren<Shield>().playerID = 1;
