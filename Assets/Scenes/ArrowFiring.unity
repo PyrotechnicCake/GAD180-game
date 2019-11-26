@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -430,7 +430,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &781341035 stripped
 GameObject:
@@ -509,6 +509,22 @@ PrefabInstance:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1899102872}
+    - target: {fileID: 781341044, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
+      propertyPath: maxhp
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 781341044, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
+      propertyPath: hp
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781341044, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
+      propertyPath: atk
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 781341044, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
+      propertyPath: rngAtk
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
 --- !u!4 &994358643 stripped
@@ -692,7 +708,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5424316783016220806, guid: 6c074bd79888dd94b853b0b0b023ec44,
+    - target: {fileID: 9090025359562717108, guid: 6c074bd79888dd94b853b0b0b023ec44,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1172,7 +1188,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &5607855855763251733
 PrefabInstance:
@@ -1256,10 +1272,5 @@ PrefabInstance:
       propertyPath: myPlayer
       value: 
       objectReference: {fileID: 530952130}
-    - target: {fileID: 5607855855192796410, guid: 7a8ce8ca844cd034f801ddabc9d7e07f,
-        type: 3}
-      propertyPath: m_TagString
-      value: timertag
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a8ce8ca844cd034f801ddabc9d7e07f, type: 3}
