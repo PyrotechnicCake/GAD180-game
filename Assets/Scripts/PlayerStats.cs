@@ -27,7 +27,7 @@ public class PlayerStats : MonoBehaviour
     void Start()
     {
         player = this.gameObject;
-        LoadStats();
+        //LoadStats();
     }
 
     // Update is called once per frame
@@ -59,11 +59,14 @@ public class PlayerStats : MonoBehaviour
     public void CheckIfDead()
     {
         //Emmit particles
-            Instantiate(bloodParticles, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+        Instantiate(bloodParticles, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+
         if (hp <= 0)
         {
             //respawn
-            player.transform.position = respawnPoint.transform.position;
+            GetComponent<CharacterController>().enabled = false;
+            transform.position = respawnPoint.position;
+            GetComponent<CharacterController>().enabled = true;
             //Check remaining lives
 
             //subtract 1 life
