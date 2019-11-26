@@ -29,13 +29,18 @@ public class UIManager : MonoBehaviour
     public int playerID;
 
 
-    private void Start()
+    void Start()
     {
-        if(playerID == 0)
+       
+    }
+
+    public void AssignUI()
+    {
+        if (playerID == 0)
         {
             myPlayer = GameObject.FindGameObjectWithTag("player1");
         }
-        else
+        if (playerID == 1)
         {
             myPlayer = GameObject.FindGameObjectWithTag("player2");
         }

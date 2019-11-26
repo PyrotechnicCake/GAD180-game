@@ -11,8 +11,8 @@ public class FallDeath : MonoBehaviour
         if (other.gameObject.tag == "player1" || other.gameObject.tag == "player2")
 
         {
-            gameObject.GetComponent<PlayerStats>().hp -= 5;
-            gameObject.GetComponent<PlayerStats>().CheckIfDead();
+            other.gameObject.GetComponent<PlayerStats>().hp -= 5;
+            other.gameObject.GetComponent<PlayerStats>().CheckIfDead();
         }
     }
 }
