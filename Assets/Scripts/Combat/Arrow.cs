@@ -12,6 +12,7 @@ public class Arrow : MonoBehaviour
     public float radius = 1f;
     public int damage = 1;
     bool shieldFound;
+    bool obstacleFound;
     bool damagedPlayer;
 
 
@@ -42,6 +43,14 @@ public class Arrow : MonoBehaviour
                     }
                 }
                 Debug.Log(col.name);
+                if(col.GetComponent<Obstacle>() != null)
+                {
+                    if (col.GetComponent<Obstacle>().isObstacle)
+                    {
+                        obstacleFound = true;
+                        Destroy(this.gameObject);
+                    }
+                }
             }
             if (!shieldFound)
             {
@@ -59,6 +68,7 @@ public class Arrow : MonoBehaviour
 
             gameObject.SetActive(false);
             shieldFound = false;
+            obstacleFound = false;
             damagedPlayer = false;
 
         }

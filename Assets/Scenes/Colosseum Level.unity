@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 25802444}
   - component: {fileID: 25802443}
   - component: {fileID: 25802442}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fallen Pillar (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 118525439}
   - component: {fileID: 118525438}
   - component: {fileID: 118525437}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fallen Pillar (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,7 +308,7 @@ GameObject:
   - component: {fileID: 143189488}
   - component: {fileID: 143189487}
   - component: {fileID: 143189486}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pillar Base (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,7 +399,7 @@ GameObject:
   - component: {fileID: 238218448}
   - component: {fileID: 238218447}
   - component: {fileID: 238218446}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fallen Pillar (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,6 +512,7 @@ MonoBehaviour:
   imp: {fileID: 410317613402411279, guid: b94c58824ec5db14a8be1af9d3ae71e9, type: 3}
   snauz: {fileID: 410317613402411279, guid: 37f12aa681b058f4b9c87b4fb58418b6, type: 3}
   playerID: 0
+  P1_UI: {fileID: 0}
 --- !u!4 &253440492
 Transform:
   m_ObjectHideFlags: 0
@@ -520,7 +521,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 253440490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.63, y: 7.45, z: -8.33}
+  m_LocalPosition: {x: 48.6, y: 7.45, z: -6.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -540,7 +541,7 @@ GameObject:
   - component: {fileID: 397476118}
   - component: {fileID: 397476114}
   - component: {fileID: 397476119}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spike trap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -613,8 +614,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 397476113}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -27.384157, y: -1.173233, z: -39.946743}
-  m_LocalScale: {x: 3.6580029, y: 3.6580029, z: 3.6580029}
+  m_LocalPosition: {x: -27.384157, y: 0.4, z: -37.2}
+  m_LocalScale: {x: 7.67449, y: 6.063871, z: 5.837441}
   m_Children: []
   m_Father: {fileID: 764055124}
   m_RootOrder: 20
@@ -679,6 +680,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72977810a49d57045a332ba9dfbcd724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop: {fileID: 0}
+  dropTime: 0
+  theTime: {fileID: 0}
+  placement1: {fileID: 0}
+  placement2: {fileID: 0}
+  placement3: {fileID: 0}
+  placement4: {fileID: 0}
+  placement5: {fileID: 0}
 --- !u!4 &488346313
 Transform:
   m_ObjectHideFlags: 0
@@ -705,7 +714,7 @@ GameObject:
   - component: {fileID: 519039580}
   - component: {fileID: 519039579}
   - component: {fileID: 519039578}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pillar Base (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -861,11 +870,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5607855854454451487, guid: 7a8ce8ca844cd034f801ddabc9d7e07f,
-        type: 3}
-      propertyPath: myPlayer
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5607855855301716486, guid: 7a8ce8ca844cd034f801ddabc9d7e07f,
         type: 3}
       propertyPath: playerID
@@ -880,6 +884,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Player2UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 5607855854454451487, guid: 7a8ce8ca844cd034f801ddabc9d7e07f,
+        type: 3}
+      propertyPath: myPlayer
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a8ce8ca844cd034f801ddabc9d7e07f, type: 3}
@@ -908,7 +917,7 @@ Transform:
   m_GameObject: {fileID: 764055123}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 31.796616, y: 8.524715, z: -2.581006}
-  m_LocalScale: {x: 0.67, y: 0.67, z: 0.67}
+  m_LocalScale: {x: 0.49417192, y: 0.49417192, z: 0.49417192}
   m_Children:
   - {fileID: 1014495087}
   - {fileID: 1499096517}
@@ -946,7 +955,7 @@ GameObject:
   - component: {fileID: 823564827}
   - component: {fileID: 823564826}
   - component: {fileID: 823564825}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fallen Pillar (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1038,7 +1047,7 @@ GameObject:
   - component: {fileID: 867525798}
   - component: {fileID: 867525797}
   - component: {fileID: 867525796}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1130,7 +1139,7 @@ GameObject:
   - component: {fileID: 917376322}
   - component: {fileID: 917376321}
   - component: {fileID: 917376320}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pillar Base (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1221,7 +1230,7 @@ GameObject:
   - component: {fileID: 954981518}
   - component: {fileID: 954981517}
   - component: {fileID: 954981516}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1378,7 +1387,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991340963}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 17.5, y: 72.2, z: -3.8}
+  m_LocalPosition: {x: 20.67, y: 57.78, z: -3.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1439812338}
@@ -1411,7 +1420,7 @@ GameObject:
   - component: {fileID: 1014495086}
   - component: {fileID: 1014495085}
   - component: {fileID: 1014495084}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Colosseum Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1502,7 +1511,7 @@ GameObject:
   - component: {fileID: 1122218226}
   - component: {fileID: 1122218225}
   - component: {fileID: 1122218224}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1615,6 +1624,7 @@ MonoBehaviour:
   imp: {fileID: 410317613402411279, guid: b94c58824ec5db14a8be1af9d3ae71e9, type: 3}
   snauz: {fileID: 410317613402411279, guid: 37f12aa681b058f4b9c87b4fb58418b6, type: 3}
   playerID: 1
+  P2_UI: {fileID: 0}
 --- !u!4 &1145874666
 Transform:
   m_ObjectHideFlags: 0
@@ -1623,7 +1633,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1145874664}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.94, y: 7.5, z: -7.87}
+  m_LocalPosition: {x: -5.6, y: 7.5, z: -5.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1641,7 +1651,7 @@ GameObject:
   - component: {fileID: 1156962070}
   - component: {fileID: 1156962069}
   - component: {fileID: 1156962068}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1801,7 +1811,7 @@ GameObject:
   - component: {fileID: 1433354344}
   - component: {fileID: 1433354343}
   - component: {fileID: 1433354342}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fallen Pillar (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1899,7 +1909,7 @@ GameObject:
   - component: {fileID: 1499096516}
   - component: {fileID: 1499096515}
   - component: {fileID: 1499096514}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1990,7 +2000,7 @@ GameObject:
   - component: {fileID: 1517917938}
   - component: {fileID: 1517917937}
   - component: {fileID: 1517917936}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2081,7 +2091,7 @@ GameObject:
   - component: {fileID: 1602958774}
   - component: {fileID: 1602958773}
   - component: {fileID: 1602958772}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fallen Pillar (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2173,7 +2183,7 @@ GameObject:
   - component: {fileID: 1622770796}
   - component: {fileID: 1622770795}
   - component: {fileID: 1622770794}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2265,7 +2275,7 @@ GameObject:
   - component: {fileID: 1701275406}
   - component: {fileID: 1701275405}
   - component: {fileID: 1701275404}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2356,7 +2366,7 @@ GameObject:
   - component: {fileID: 1739199659}
   - component: {fileID: 1739199658}
   - component: {fileID: 1739199657}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pillar Base (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2447,7 +2457,7 @@ GameObject:
   - component: {fileID: 1753032889}
   - component: {fileID: 1753032888}
   - component: {fileID: 1753032887}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fallen Pillar (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
