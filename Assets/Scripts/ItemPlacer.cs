@@ -6,8 +6,14 @@ public class ItemPlacer : MonoBehaviour
 {
     public GameObject itemsToDrop;
     public float dropTime;
-    public Vector3 dropRange;
     public GameObject theTime;
+
+    //make list of places to place items
+    public GameObject placement1;
+    public GameObject placement2;
+    public GameObject placement3;
+    public GameObject placement4;
+    public GameObject placement5;
 
     // Update is called once per frame
     void Update()
