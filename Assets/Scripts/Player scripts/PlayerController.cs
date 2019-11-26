@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 10.0f;
+    public float speed = 6f;
     public float jumpForce = 8.0f;
     public float gravity = 20.0f;
     public float rotSpeed = 90f;
@@ -69,11 +69,11 @@ public class PlayerController : MonoBehaviour
 
         if (GetComponentInChildren<Shield>().shieldUp == true)
         {
-            speed = 20f;
+            speed = 3f;
         }
         if (GetComponentInChildren<Shield>().shieldUp == false)
         {
-            speed = 20f;
+            speed = 6f;
         }
 
 
