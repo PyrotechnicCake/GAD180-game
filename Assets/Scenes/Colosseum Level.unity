@@ -491,7 +491,7 @@ GameObject:
   - component: {fileID: 253440491}
   m_Layer: 0
   m_Name: Player 1 Spawn
-  m_TagString: Untagged
+  m_TagString: Player 1 Spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -753,6 +753,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI parent
       objectReference: {fileID: 0}
+    - target: {fileID: 5607855855636873571, guid: 7a8ce8ca844cd034f801ddabc9d7e07f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5607855855636873570, guid: 7a8ce8ca844cd034f801ddabc9d7e07f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -817,6 +822,11 @@ PrefabInstance:
         type: 3}
       propertyPath: myPlayer
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5607855855301716486, guid: 7a8ce8ca844cd034f801ddabc9d7e07f,
+        type: 3}
+      propertyPath: playerID
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a8ce8ca844cd034f801ddabc9d7e07f, type: 3}
@@ -1335,7 +1345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distBetweenPlayers: 0
-  maxHeight: 103.13
+  maxHeight: 72.2
 --- !u!1 &1014495083
 GameObject:
   m_ObjectHideFlags: 0
