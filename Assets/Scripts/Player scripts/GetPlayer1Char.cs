@@ -19,7 +19,8 @@ public class GetPlayer1Char : MonoBehaviour
         GetComponentInChildren<Bow>().playerID = 0;
         Debug.Log("playerID set to " + GetComponentInChildren<Shield>().playerID);
     }*/
-    void Awake()
+    
+    void Start()
     {
         int getP1Character;
         getP1Character = PlayerPrefs.GetInt(p1SelectedCharacter);
@@ -44,11 +45,6 @@ public class GetPlayer1Char : MonoBehaviour
                 playerDemon.transform.position = GameObject.FindGameObjectWithTag("Player 1 Spawn").transform.position;
                 break;
         }
-    }
-    void Start()
-    {
-
-        //SetPlayerID();
     }
 
     
