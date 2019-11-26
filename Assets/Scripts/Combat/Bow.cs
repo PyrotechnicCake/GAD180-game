@@ -15,7 +15,8 @@ public class Bow : MonoBehaviour
     public int playerID;
     string chargeBow;
 
-    private void Awake()
+
+    void Start()
     {
         if (this.gameObject.CompareTag("player1"))
         {
@@ -25,11 +26,6 @@ public class Bow : MonoBehaviour
         {
             playerID = 1;
         }
-    }
-
-    void Start()
-    {
-        
 
         if (playerID == 0)
         {
