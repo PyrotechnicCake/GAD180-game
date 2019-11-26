@@ -27,7 +27,7 @@ public class PlayerStats : MonoBehaviour
     void Start()
     {
         player = this.gameObject;
-        //LoadStats();
+        LoadStats();
     }
 
     // Update is called once per frame
