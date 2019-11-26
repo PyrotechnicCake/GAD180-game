@@ -8674,7 +8674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2133790471, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
       propertyPath: m_StepOffset
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 781341044, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
       propertyPath: respawnPoint
