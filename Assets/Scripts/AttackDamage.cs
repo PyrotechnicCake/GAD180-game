@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpikeTrapDamage : MonoBehaviour
+public class AttackDamage : MonoBehaviour
 {
     public LayerMask layer;
     public float radius = 1f;
@@ -11,12 +11,19 @@ public class SpikeTrapDamage : MonoBehaviour
     bool damagedPlayer;
     public bool isSpikeTrap;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-       
+        if (GetComponentInParent<PlayerController>().gameObject.layer == 9)
+        {
+             layer = 10;
+        }
+        if (GetComponentInParent<PlayerController>().gameObject.layer == 10)
+        {
+             layer = 9;
+        }
+        
     }
-    // Update is called once per frame
+
     void Update()
     {
         Collider[] hits = Physics.OverlapSphere(transform.position, radius, layer);
@@ -50,12 +57,10 @@ public class SpikeTrapDamage : MonoBehaviour
 
             }
 
-            gameObject.SetActive(false);
+            gameObject.SetActive(false);          
             shieldFound = false;
             damagedPlayer = false;
 
         }
     }
 }
-
-   

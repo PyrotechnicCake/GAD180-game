@@ -7,7 +7,7 @@ public class GetPlayer1Char : MonoBehaviour
     public GameObject demon, imp, snauz;
     private readonly string p1SelectedCharacter = "P1SelectedCharacter";
     public int playerID = 0;
-    public GameObject spawnPoint;
+    //public GameObject spawnPoint;
 
     // Start is called before the first frame update
 

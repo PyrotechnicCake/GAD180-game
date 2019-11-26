@@ -68,7 +68,7 @@ public class PlayerStats : MonoBehaviour
             transform.position = respawnPoint.position;
             GetComponent<CharacterController>().enabled = true;
             //Check remaining lives
-
+            
             //subtract 1 life
             lives -= 1;
             //refill hp
