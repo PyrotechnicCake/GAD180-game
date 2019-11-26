@@ -14,6 +14,7 @@ TagManager:
   - Sword
   - Player 1 Spawn
   - Player 2 Spawn
+  - timertag
   layers:
   - Default
   - TransparentFX
