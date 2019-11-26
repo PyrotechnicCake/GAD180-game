@@ -16,6 +16,7 @@ TagManager:
   - Player 2 Spawn
   - Player1UI
   - Player2UI
+  - timertag
   layers:
   - Default
   - TransparentFX
