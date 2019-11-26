@@ -21,13 +21,14 @@ public class PlayerStats : MonoBehaviour
     public GameObject bloodParticles;
     public GameObject player;
     public GameObject playerPrefab;
-    public Transform respawnPoint;
+    public GameObject respawnPoint;
 
     // Start is called before the first frame update
     void Start()
     {
         player = this.gameObject;
         LoadStats();
+        respawnPoint = GameObject.FindGameObjectWithTag("Spawn point");
     }
 
     // Update is called once per frame
@@ -63,21 +64,25 @@ public class PlayerStats : MonoBehaviour
 
         if (hp <= 0)
         {
-            //respawn
-            GetComponent<CharacterController>().enabled = false;
-            transform.position = respawnPoint.position;
-            GetComponent<CharacterController>().enabled = true;
-            //Check remaining lives
             
-            //subtract 1 life
-            lives -= 1;
-            //refill hp
-            hp = 5;
-            //give temporary invincibility
-           
+            //Check remaining lives
+            if (lives > 0)
+            {
+                //respawn
+                GetComponent<CharacterController>().enabled = false;
+                player.transform.position = respawnPoint.transform.position;
+                GetComponent<CharacterController>().enabled = true;
+                //subtract 1 life
+                lives -= 1;
+                //refill hp
+                hp = 5;
+                //give temporary invincibility
+            }
+            else
+            {
+                //gameover
+            }
         }
-
-       
     }
 
     void MeleeAttack()
