@@ -60,16 +60,21 @@ public class PlayerController : MonoBehaviour
            // moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
         }
-        angle = Mathf.Atan2(Input.GetAxis(rSHorz), Input.GetAxis(rSVert)) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, angle, 0);
+
+        if (Input.GetAxis(rSHorz) >= 0.1f || Input.GetAxis(rSHorz) <= -0.1f)
+        {
+            angle = Mathf.Atan2(Input.GetAxis(rSHorz), Input.GetAxis(rSVert)) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0, angle, 0);
+        }
+        
 
         if (GetComponentInChildren<Shield>().shieldUp == true)
         {
-            speed = 3f;
+            speed = 20f;
         }
         if (GetComponentInChildren<Shield>().shieldUp == false)
         {
-            speed = 6f;
+            speed = 20f;
         }
 
 

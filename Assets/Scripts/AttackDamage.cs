@@ -9,17 +9,19 @@ public class AttackDamage : MonoBehaviour
     public int damage = 1;
     bool shieldFound = false;
     bool damagedPlayer;
+    public bool isSpikeTrap;
 
     private void Start()
     {
         if (GetComponentInParent<PlayerController>().gameObject.layer == 9)
         {
-            layer = 10;
+             layer = 10;
         }
         if (GetComponentInParent<PlayerController>().gameObject.layer == 10)
         {
-            layer = 9;
+             layer = 9;
         }
+        
     }
 
     void Update()
@@ -55,7 +57,7 @@ public class AttackDamage : MonoBehaviour
 
             }
 
-            gameObject.SetActive(false);
+            gameObject.SetActive(false);          
             shieldFound = false;
             damagedPlayer = false;
 

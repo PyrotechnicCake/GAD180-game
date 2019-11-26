@@ -112,6 +112,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &751377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 751378}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &751378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751377}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.005394, y: 6.5290146, z: -19.437683}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &25802441
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,7 +558,7 @@ GameObject:
   - component: {fileID: 397476115}
   - component: {fileID: 397476118}
   - component: {fileID: 397476114}
-  - component: {fileID: 397476120}
+  - component: {fileID: 397476119}
   m_Layer: 0
   m_Name: Spike trap
   m_TagString: Untagged
@@ -621,7 +651,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.67
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &397476120
+--- !u!114 &397476119
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -630,14 +660,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 397476113}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e9abe797cc324642a3520f56954d079, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b428d772535c1845a539c807c59fbe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   layer:
     serializedVersion: 2
-    m_Bits: 512
-  radius: 4
+    m_Bits: 0
+  radius: 1
   damage: 1
+  isSpikeTrap: 0
 --- !u!1 &519039577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1353,6 +1384,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.4245
       objectReference: {fileID: 0}
+    - target: {fileID: 781341044, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 751378}
     - target: {fileID: 5424316783016220800, guid: 6c074bd79888dd94b853b0b0b023ec44,
         type: 3}
       propertyPath: speed
@@ -1361,7 +1396,7 @@ PrefabInstance:
     - target: {fileID: 5424316783016220800, guid: 6c074bd79888dd94b853b0b0b023ec44,
         type: 3}
       propertyPath: gravity
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 781341036, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
