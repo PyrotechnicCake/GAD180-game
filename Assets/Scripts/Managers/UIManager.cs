@@ -26,7 +26,20 @@ public class UIManager : MonoBehaviour
     public float playerLives;
     //Initialize arrows
     public int arrows;
-    
+    public int playerID;
+
+
+    private void Start()
+    {
+        if(playerID == 0)
+        {
+            myPlayer = GameObject.FindGameObjectWithTag("player1");
+        }
+        else
+        {
+            myPlayer = GameObject.FindGameObjectWithTag("player2");
+        }
+    }
     // Update is called once per frame
     void Update()
     {

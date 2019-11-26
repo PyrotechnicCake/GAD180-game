@@ -7,7 +7,7 @@ public class GetPlayer1Char : MonoBehaviour
     public GameObject demon, imp, snauz;
     private readonly string p1SelectedCharacter = "P1SelectedCharacter";
     public int playerID = 0;
-    public GameObject spawnPoint;
+    //public GameObject spawnPoint;
 
     // Start is called before the first frame update
 
@@ -19,7 +19,8 @@ public class GetPlayer1Char : MonoBehaviour
         GetComponentInChildren<Bow>().playerID = 0;
         Debug.Log("playerID set to " + GetComponentInChildren<Shield>().playerID);
     }*/
-    void Awake()
+    
+    void Start()
     {
         int getP1Character;
         getP1Character = PlayerPrefs.GetInt(p1SelectedCharacter);
@@ -43,14 +44,7 @@ public class GetPlayer1Char : MonoBehaviour
                 playerDemon.gameObject.layer = 9;
                 playerDemon.transform.position = GameObject.FindGameObjectWithTag("Player 1 Spawn").transform.position;
                 break;
-            default:
-                break;
         }
-    }
-    void Start()
-    {
-
-        //SetPlayerID();
     }
 
     

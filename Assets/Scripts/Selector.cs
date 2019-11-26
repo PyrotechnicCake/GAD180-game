@@ -254,7 +254,7 @@ public class Selector : MonoBehaviour
             hellscape 1*/
         if (levelInt == 1)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(4);
         }
         else
         {

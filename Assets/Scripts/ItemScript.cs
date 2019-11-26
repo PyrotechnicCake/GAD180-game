@@ -15,6 +15,28 @@ public class ItemScript : MonoBehaviour
     public int healAmount = 2;
     public float staminaRefill = 50;
     public int arrowRefill = 10;
+    public GameObject spritePlane;
+    public Material healthMat;
+    public Material stamMat;
+    public Material arrowMat;
+
+    private void Start()
+    {
+        myItem = (Items)Random.Range(0, 3);
+
+        switch (myItem)
+        {
+            case Items.health:
+                spritePlane.GetComponent<MeshRenderer>().material = healthMat;
+                break;
+            case Items.stamina:
+                spritePlane.GetComponent<MeshRenderer>().material = stamMat;
+                break;
+            case Items.arrows:
+                spritePlane.GetComponent<MeshRenderer>().material = arrowMat;
+                break;
+        }
+    }
 
     void OnTriggerEnter(Collider col)
     {
