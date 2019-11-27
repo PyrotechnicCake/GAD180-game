@@ -40,6 +40,7 @@ public class Arrow : MonoBehaviour
                     {
                         shieldFound = true;
                         GetComponentInParent<PlayerStats>().stam -= 5;
+                        GetComponentInParent<PlayerStats>().stamDelayTimer = 0.0f;
                     }
                 }
                 Debug.Log(col.name);

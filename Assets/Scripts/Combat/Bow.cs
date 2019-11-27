@@ -75,6 +75,7 @@ public class Bow : MonoBehaviour
         if (totalCharge >= totalChargeNeeded)
         {
             GetComponentInParent<PlayerStats>().stam -= 10;
+            GetComponentInParent<PlayerStats>().stamDelayTimer = 0.0f;
             totalArrows -= 1;
             Shoot();
             //Debug.Log("Shot!");

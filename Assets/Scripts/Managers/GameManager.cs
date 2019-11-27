@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public int stam = 100;
     public int ammo = 20;
     public int lives = 3;
+    public int stamRecharge = 15;
 
     //movement based stats to be called when calling movement
     public float movespeed = 5f;

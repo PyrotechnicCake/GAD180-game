@@ -53,6 +53,7 @@ public class AttackScript : MonoBehaviour
             if (Input.GetButtonDown(swingSword) && GetComponentInParent<PlayerStats>().stam > 0)
             {
                 GetComponentInParent<PlayerStats>().stam -= 20;
+                GetComponentInParent<PlayerStats>().stamDelayTimer = 0.0f;
                 swordAnim.SetTrigger("Swing");
 
                 /*Collider[] meleeHitBox = Physics.OverlapCapsule(meleeAttackPos.position, meleeAttackPos.position * 10f, meleeAttackRange, enemyInRangePlayer);

@@ -46,6 +46,9 @@ MonoBehaviour:
   layer:
     serializedVersion: 2
     m_Bits: 1024
+  layerDefault:
+    serializedVersion: 2
+    m_Bits: 0
   radius: 0.5
   damage: 1
 --- !u!1 &882282181586736135
@@ -507,7 +510,7 @@ MonoBehaviour:
   atkspd: 0
   stam: 0
   maxStam: 100
-  stamRecharge: 3
+  stamRecharge: 0
   ammo: 0
   lives: 0
   movespeed: 0

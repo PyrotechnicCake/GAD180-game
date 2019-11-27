@@ -12,7 +12,10 @@ public class PlayerStats : MonoBehaviour
     public int atkspd;
     public float stam;
     public int maxStam = 100;
-    public float stamRecharge = 5;
+    public float stamRecharge = 5f;
+    private float rechargeDelay = 3f;
+    public float stamDelayTimer = 0.0f;
+    public float timeToRegen = 2f;
     public int ammo;
     public float lives;
     public float movespeed;
@@ -36,12 +39,30 @@ public class PlayerStats : MonoBehaviour
     {
         if (stam < maxStam)
         {
-            stam += Time.deltaTime * stamRecharge;
+            if(stamDelayTimer >= timeToRegen)
+            {
+                stam = Mathf.Clamp(stam + (stamRecharge * Time.deltaTime), 0.0f, maxStam);
+            }
+            else
+            {
+                stamDelayTimer += Time.deltaTime;
+            }
+            //stam += Time.deltaTime * stamRecharge;
         }
         if(stam > maxStam)
         {
             stam = maxStam;
         }
+        if(stam < 0)
+        {
+            stam = 0;
+        }
+    }
+
+    IEnumerator StamDelay()
+    {
+        yield return new WaitForSeconds(5);
+        Debug.Log("stam delay");
     }
 
     void LoadStats()
@@ -55,6 +76,7 @@ public class PlayerStats : MonoBehaviour
         lives = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().lives;
         movespeed = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().movespeed;
         dir = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().dir;
+        stamRecharge = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().stamRecharge;
     }
 
     public void CheckIfDead()
