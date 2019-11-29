@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{060bc0e8-ad61-4071-81d6-d6377e1ac3ca}">
+		<property name="name">
+			<value>StopDraw</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ca827a55-733f-4db9-a4b4-34c75a70a090}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{204aab91-922f-4c83-b6cd-dc7354d57c86}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{204aab91-922f-4c83-b6cd-dc7354d57c86}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

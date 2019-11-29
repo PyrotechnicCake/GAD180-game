@@ -13,19 +13,115 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114172934975433154}
-  - {fileID: 114809370852004962}
+  - {fileID: 114550497868569356}
+  - {fileID: 114690847303995142}
   EditorEvents:
-  - {fileID: 114443618374575414}
-  - {fileID: 114617365031665940}
-  - {fileID: 114320723555223536}
+  - {fileID: 114330848016759656}
+  - {fileID: 114479323202230180}
+  - {fileID: 114960103746431224}
+  - {fileID: 114525217926099094}
+  - {fileID: 114882527238151146}
+  - {fileID: 114128923454680834}
+  - {fileID: 114344388869794842}
+  - {fileID: 114202679876285046}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 114809370852004962}
+  - {fileID: 114690847303995142}
   StringsBanks:
-  - {fileID: 114172934975433154}
-  stringsBankWriteTime: 637102255876513655
+  - {fileID: 114550497868569356}
+  stringsBankWriteTime: 637106222388298977
   cacheVersion: 3
+--- !u!114 &114005412839225242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114022514677112404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114060611160881088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114060699451075716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114128923454680834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Impacts/Flesh/Sword Wound
+  m_EditorClassIdentifier: 
+  Path: event:/Impacts/Flesh/Sword Wound
+  guid: c866eaa5ff86964c9f99436aaf9d2d11
+  Banks:
+  - {fileID: 114690847303995142}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2554
 --- !u!114 &114129089404841096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,6 +139,40 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &114144730625249618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/Stop Draw
+  m_EditorClassIdentifier: 
+  Name: Stop Draw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114147818113231472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114172934975433154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,6 +193,127 @@ MonoBehaviour:
   - Name: Desktop
     Value: 900
   Exists: 1
+--- !u!114 &114183996384216260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114202679876285046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Weapons/Sword/Sword Swing
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Weapons/Sword/Sword Swing
+  guid: f00cee1a94ee7f4a975c379131baecf0
+  Banks:
+  - {fileID: 114690847303995142}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 319
+--- !u!114 &114212237196227414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114221107181731788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114265289442959200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/Sword/Sword Swing
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/Sword/Sword Swing
+  guid: f00cee1a94ee7f4a975c379131baecf0
+  Banks:
+  - {fileID: 114690847303995142}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 406
+--- !u!114 &114319306371974964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/Bow/Arrow Draw
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/Bow/Arrow Draw
+  guid: 15f173a5b4161b40a2399357e6ea2f1d
+  Banks:
+  - {fileID: 114690847303995142}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 114951634103967820}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1343
 --- !u!114 &114320723555223536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,6 +337,69 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 406
+--- !u!114 &114330848016759656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Movement/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Movement/Footsteps
+  guid: 04de31f330b48e42bae744c1806e34af
+  Banks:
+  - {fileID: 114690847303995142}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3392
+--- !u!114 &114344388869794842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Weapons/Shield/Shield Raise
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Weapons/Shield/Shield Raise
+  guid: d39f1b754b605c429de9a8cc929dcd8e
+  Banks:
+  - {fileID: 114690847303995142}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 625
+--- !u!114 &114397387260688480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114443618374575414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,6 +424,89 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1343
+--- !u!114 &114450023588348232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/Fire
+  m_EditorClassIdentifier: 
+  Name: Fire
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114479323202230180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Colosseum/Colosseum Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Colosseum/Colosseum Ambience
+  guid: 0ca1f613eca80e4e9a4414e1112f8f48
+  Banks:
+  - {fileID: 114690847303995142}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 67000
+--- !u!114 &114525217926099094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Weapons/Bow/Fire
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Weapons/Bow/Fire
+  guid: 2e737aa8735ef4429a60c6f18e55d7a9
+  Banks:
+  - {fileID: 114690847303995142}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 136
+--- !u!114 &114550497868569356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: A:/Game Projects/BR/Latest version/GAD180-game/Assets/Sound/BR Game/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637106222388298977
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1234
+  Exists: 1
 --- !u!114 &114617365031665940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,6 +547,83 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114672341918791764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114676836585820106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114690847303995142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: A:/Game Projects/BR/Latest version/GAD180-game/Assets/Sound/BR Game/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637106222388269065
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1060672
+  Exists: 1
+--- !u!114 &114757663969872890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/Bow/Fire
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/Bow/Fire
+  guid: 2e737aa8735ef4429a60c6f18e55d7a9
+  Banks:
+  - {fileID: 114690847303995142}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 136
 --- !u!114 &114809370852004962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,4 +643,136 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 42688
+  Exists: 1
+--- !u!114 &114882527238151146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Impacts/Sword/Sword Hit Shield
+  m_EditorClassIdentifier: 
+  Path: event:/Impacts/Sword/Sword Hit Shield
+  guid: a19f3df7c374ea43b54657f2894c8174
+  Banks:
+  - {fileID: 114690847303995142}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 734
+--- !u!114 &114888369157353960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114940118156050134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114945209186897140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114951634103967820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/Fire
+  m_EditorClassIdentifier: 
+  Name: Fire
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114960103746431224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Weapons/Bow/Arrow Draw
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Weapons/Bow/Arrow Draw
+  guid: 15f173a5b4161b40a2399357e6ea2f1d
+  Banks:
+  - {fileID: 114690847303995142}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 114974270818114036}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1875
+--- !u!114 &114974270818114036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 1

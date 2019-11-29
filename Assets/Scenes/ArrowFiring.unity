@@ -240,8 +240,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemsToDrop: {fileID: 1760130160}
   dropTime: 100
-  dropRange: {x: 0, y: 0, z: 0}
   theTime: {fileID: 468739128}
+  placement1: {fileID: 0}
+  placement2: {fileID: 0}
+  placement3: {fileID: 0}
+  placement4: {fileID: 0}
+  placement5: {fileID: 0}
 --- !u!4 &294204006
 Transform:
   m_ObjectHideFlags: 0
@@ -294,6 +298,8 @@ MonoBehaviour:
   stam: 0
   maxStam: 100
   stamRecharge: 3
+  stamDelayTimer: 0
+  timeToRegen: 2
   ammo: 0
   lives: 0
   movespeed: 0
@@ -416,6 +422,7 @@ MonoBehaviour:
   stam: 100
   ammo: 20
   lives: 3
+  stamRecharge: 15
   movespeed: 5
   dir: 0
 --- !u!4 &766943678
@@ -545,6 +552,7 @@ GameObject:
   - component: {fileID: 1124031342}
   - component: {fileID: 1124031341}
   - component: {fileID: 1124031344}
+  - component: {fileID: 1124031345}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -631,6 +639,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distBetweenPlayers: 10
   maxHeight: 20
+--- !u!114 &1124031345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124031340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Ambience/Colosseum/Colosseum Ambience
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1001 &1314005881
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -713,6 +744,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6f680b6217f7b074aae808aefb89a0ab, type: 2}
+    - target: {fileID: 9090025359562717108, guid: 6c074bd79888dd94b853b0b0b023ec44,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5424316783016220800, guid: 6c074bd79888dd94b853b0b0b023ec44,
         type: 3}
       propertyPath: playerID
@@ -787,11 +823,6 @@ PrefabInstance:
         type: 3}
       propertyPath: playerID
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9090025359562717108, guid: 6c074bd79888dd94b853b0b0b023ec44,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1112609825, guid: 6c074bd79888dd94b853b0b0b023ec44, type: 3}
       propertyPath: m_RootOrder

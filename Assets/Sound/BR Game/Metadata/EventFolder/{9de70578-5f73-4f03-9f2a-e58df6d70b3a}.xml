@@ -5,7 +5,7 @@
 			<value>Weapons</value>
 		</property>
 		<relationship name="folder">
-			<destination>{910e1054-f7c2-458d-a06e-9bfedfb9f3e9}</destination>
+			<destination>{3a247b95-f05c-432c-a4f7-014143454a35}</destination>
 		</relationship>
 	</object>
 </objects>

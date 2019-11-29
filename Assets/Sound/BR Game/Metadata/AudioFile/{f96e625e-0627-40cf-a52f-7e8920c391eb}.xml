@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{f96e625e-0627-40cf-a52f-7e8920c391eb}">
+		<property name="assetPath">
+			<value>Weapons/Bow/BR_Game_Bow_Draw_41khz_03.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.3788749999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8890ea18-158c-4674-94e8-79a3be63da61}</destination>
+		</relationship>
+	</object>
+</objects>

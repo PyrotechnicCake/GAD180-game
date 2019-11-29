@@ -37,6 +37,7 @@ public class Shield : MonoBehaviour
     {
         if (Input.GetButtonDown(defend))
         {
+            FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Player/Weapons/Shield/Shield Raise", gameObject);
             shieldUp = true;
             shieldAnim.SetTrigger("Defend");
         }

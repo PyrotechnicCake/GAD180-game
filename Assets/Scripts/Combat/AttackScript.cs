@@ -52,6 +52,7 @@ public class AttackScript : MonoBehaviour
         {
             if (Input.GetButtonDown(swingSword) && GetComponentInParent<PlayerStats>().stam > 0)
             {
+                FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Player/Weapons/Sword/Sword Swing", gameObject);
                 GetComponentInParent<PlayerStats>().stam -= 20;
                 GetComponentInParent<PlayerStats>().stamDelayTimer = 0.0f;
                 swordAnim.SetTrigger("Swing");

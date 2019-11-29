@@ -54,6 +54,7 @@ public class AttackDamage : MonoBehaviour
                 {
                     if (col.GetComponent<PlayerStats>() != null && !damagedPlayer)
                     {
+                        FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Impacts/Flesh/Sword Wound", gameObject); 
                         col.GetComponent<PlayerStats>().hp -= damage;
                         col.GetComponent<PlayerStats>().CheckIfDead();
                         damagedPlayer = true;

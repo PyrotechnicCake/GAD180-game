@@ -38,6 +38,7 @@ public class Arrow : MonoBehaviour
                 {
                     if (col.GetComponentInParent<Shield>().shieldUp)
                     {
+                        FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Impacts/Sword/Sword Hit Shield", gameObject);
                         shieldFound = true;
                         GetComponentInParent<PlayerStats>().stam -= 5;
                         GetComponentInParent<PlayerStats>().stamDelayTimer = 0.0f;
@@ -59,6 +60,7 @@ public class Arrow : MonoBehaviour
                 {
                     if (col.GetComponent<PlayerStats>() != null && !damagedPlayer)
                     {
+                        FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Impacts/Flesh/Sword Wound", gameObject);
                         col.GetComponent<PlayerStats>().hp -= damage;
                         col.GetComponent<PlayerStats>().CheckIfDead();
                         damagedPlayer = true;

@@ -11,6 +11,7 @@ public class Bow : MonoBehaviour
     private float totalChargeNeeded = 1f;
     public bool isCharging = false;
     public int totalArrows = 10;
+    FMOD.Studio.EventInstance BowDraw;
 
     public int playerID;
     string chargeBow;
@@ -40,6 +41,9 @@ public class Bow : MonoBehaviour
     {
         if (Input.GetButtonDown(chargeBow) && GetComponentInParent<PlayerStats>().stam > 0 && totalArrows > 0 && GetComponentInChildren<Shield>().shieldUp == false)
         {
+            BowDraw = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Weapons/Bow/Arrow Draw");
+            BowDraw.start();
+
             //destroy sword and shield
             //instantiate bow
             Instantiate(bowPrefab, firePoint.position, firePoint.rotation, firePoint.transform);
@@ -59,6 +63,7 @@ public class Bow : MonoBehaviour
         }
         if (Input.GetButtonUp(chargeBow))
         {
+
             //try to shoot
             AttemptShoot();   
             //Debug.Log("release");
@@ -85,6 +90,7 @@ public class Bow : MonoBehaviour
         //if no dont and reset to 0 and put bow away
         else
         {
+            BowDraw.setParameterByName("BowDraw", 1f);
             totalCharge = 0f;
             //Debug.Log("failed");
             Destroy(bowPrefab);
@@ -93,5 +99,6 @@ public class Bow : MonoBehaviour
     void Shoot()
     {
         Instantiate(arrowPrefab, firePoint.position, firePoint.rotation);
+        FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Player/Weapons/Bow/Fire", gameObject); 
     }
 }
