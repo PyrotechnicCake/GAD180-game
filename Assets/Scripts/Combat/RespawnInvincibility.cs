@@ -22,10 +22,13 @@ public class RespawnIn : MonoBehaviour
 
     void Invincibility()
     {
-        if (InvincibleTime > 0)
+        if (GetComponent<PlayerStats>().respawnPoint)
         {
-            InvincibleActive = GetComponent<GameManager>().atk = 0;
-        }
+            if (InvincibleTime > 0)
+            {
+                InvincibleActive = GetComponent<AttackDamage>().damage = 0;
+            }
+         }   
     }
 
      
