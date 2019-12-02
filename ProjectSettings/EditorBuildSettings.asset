@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Character select to level test.unity
     guid: 3695b3bdae9805d4895747069e5889e7
   - enabled: 1
-    path: Assets/Scenes/Character select trial.unity
+    path: Assets/Scenes/Character select.unity
     guid: 9d005136ae7beae4f823ae75629ddfe6
   - enabled: 0
     path: 

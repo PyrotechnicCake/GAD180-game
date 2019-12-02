@@ -99,6 +99,8 @@ public class PlayerStats : MonoBehaviour
                 //refill hp
                 hp = 5;
                 //give temporary invincibility
+                //set camera
+                GetComponent<CameraManager>().Setplayers();
             }
             else
             {
