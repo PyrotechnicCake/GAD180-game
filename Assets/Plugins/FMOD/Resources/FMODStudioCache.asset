@@ -24,12 +24,13 @@ MonoBehaviour:
   - {fileID: 114128923454680834}
   - {fileID: 114344388869794842}
   - {fileID: 114202679876285046}
+  - {fileID: 114315751788328456}
   EditorParameters: []
   MasterBanks:
   - {fileID: 114690847303995142}
   StringsBanks:
   - {fileID: 114550497868569356}
-  stringsBankWriteTime: 637106222388298977
+  stringsBankWriteTime: 637109089035979720
   cacheVersion: 3
 --- !u!114 &114005412839225242
 MonoBehaviour:
@@ -173,6 +174,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114153081674282644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114172934975433154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,6 +285,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &114261841769747620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114265289442959200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,6 +325,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 406
+--- !u!114 &114315751788328456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Movement/Footsteps2
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Movement/Footsteps2
+  guid: 3072f06f2a988947bd843430d0460b5c
+  Banks:
+  - {fileID: 114690847303995142}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 734
 --- !u!114 &114319306371974964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,11 +413,11 @@ MonoBehaviour:
   - {fileID: 114690847303995142}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 3392
+  Length: 3625
 --- !u!114 &114344388869794842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,6 +441,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 625
+--- !u!114 &114388643809428188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &114397387260688480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,6 +512,23 @@ MonoBehaviour:
   m_Name: parameter:/Arrow Draw/Fire
   m_EditorClassIdentifier: 
   Name: Fire
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114478430951574182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
   Min: 0
   Max: 1
   Default: 0
@@ -501,11 +593,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: A:/Game Projects/BR/Latest version/GAD180-game/Assets/Sound/BR Game/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637106222388298977
+  lastModified: 637109089035979720
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1234
+    Value: 1278
   Exists: 1
 --- !u!114 &114617365031665940
 MonoBehaviour:
@@ -595,12 +687,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: A:/Game Projects/BR/Latest version/GAD180-game/Assets/Sound/BR Game/Build/Desktop/Master.bank
   SubDir: 
-  lastModified: 637106222388269065
+  lastModified: 637109089035830130
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1060672
+    Value: 1063008
   Exists: 1
+--- !u!114 &114725193036958978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114757663969872890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -644,6 +753,23 @@ MonoBehaviour:
   - Name: Desktop
     Value: 42688
   Exists: 1
+--- !u!114 &114868327208517980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &114882527238151146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -668,6 +794,23 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 734
 --- !u!114 &114888369157353960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Arrow Draw/StopDraw
+  m_EditorClassIdentifier: 
+  Name: StopDraw
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114888568390175106
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -755,7 +898,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114974270818114036}
+  - {fileID: 114388643809428188}
   MinDistance: 0
   MaxDistance: 0
   Length: 1875

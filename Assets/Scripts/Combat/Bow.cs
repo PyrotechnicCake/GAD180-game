@@ -90,7 +90,7 @@ public class Bow : MonoBehaviour
         //if no dont and reset to 0 and put bow away
         else
         {
-            BowDraw.setParameterByName("BowDraw", 1f);
+            BowDraw.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             totalCharge = 0f;
             //Debug.Log("failed");
             Destroy(bowPrefab);
